@@ -157,7 +157,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  font-weight: 700;
+  /* font-weight: 700; */
   transition: all 0.5s;
   color: var(--color-secondary);
   /* border-bottom: 2px solid var(--color-secondary); */
@@ -297,7 +297,7 @@ h6 {
 }
 #hero .hero__content {
   grid-column: 1/7;
-  padding: 0 0 0 13.5rem;
+  padding: 0 0 0 13.7rem;
 }
 #hero .hero__content .hero__content--heading {
   color: var(--color-primary);
@@ -440,6 +440,11 @@ section {
 #about {
   padding: 8rem 0;
 }
+@media (max-width: 991px) {
+  #about {
+    padding: 6rem 0;
+  }
+}
 #about .about__container {
   display: flex;
   align-items: center;
@@ -496,7 +501,8 @@ section {
 }
 @media (max-width: 610px) {
   #about .about-img::before {
-    left: -2.1rem;
+    left: -2rem;
+    top: -2rem
   }
 }
 #about .about-img::after {
@@ -512,7 +518,8 @@ section {
 }
 @media (max-width: 610px) {
   #about .about-img::after {
-    right: 2.9rem;
+    right: 4.3rem;
+    bottom: -2rem;
   }
 }
 /* Services Section
@@ -611,7 +618,7 @@ section {
   background: var(--color-secondary);
 }
 #clients img {
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.3s;
 }
 #clients img:hover {
@@ -831,6 +838,11 @@ section {
 --------------------------------*/
 #portfolio {
   padding: 6rem 0;
+}
+.glightbox-clean .gslide-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 #portfolio .section-header h3 {
   color: var(--color-primary);
