@@ -777,6 +777,53 @@ section {
   border: 1px solid #fff;
 }
 
+
+.technology-section {
+  padding: 6rem 0;
+  font-size: 1.8rem;
+}
+
+#technology .nav {
+  justify-content: center
+}
+#technology .nav-pills .nav-link.active {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-secondary);
+  color: var(--color-secondary)
+}
+
+#technology .nav-pills {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#technology .nav-pills .nav-link {
+  border-radius: 0;
+  padding: 0.5rem 4rem;
+  color: var(--color-primary);
+}
+
+#technology .techno__item {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#technology .techno__item .techno__item-icon {
+  margin: 30px 50px;
+}
+
+#technology .techno__item .techno__item-icon img{
+  width: 80px;
+  height: 80px;
+}
+
+#technology .techno__item .techno__item-icon p {
+  font-size: 14px;
+  margin: 0
+}
+
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
@@ -1061,7 +1108,6 @@ section {
 #form {
   padding: 6rem 0;
   font-size: 1.4rem;
-  background: #f5f8fd;
 }
 #form .section-header h3 {
   color: var(--color-primary);
@@ -1168,7 +1214,6 @@ section {
 
 #footer {
   padding: 5.2rem 0;
-  background: #fff
 }
 .footer {
   display: grid;
