@@ -852,6 +852,12 @@ section {
   font-weight: 600
 }
 
+@media (max-width: 600px) {
+  #technology .nav-pills .nav-link {
+    padding: 0.5rem 2rem;
+  }
+}
+
 #technology .techno__item {
   margin-top: 30px;
   display: flex;
@@ -871,6 +877,13 @@ section {
 #technology .techno__item .techno__item-icon img{
   width: 80px;
   height: 80px;
+}
+
+@media (max-width: 600px) {
+  #technology .techno__item .techno__item-icon img{
+    width: 60px;
+    height: 60px;
+  }
 }
 
 #technology .techno__item .techno__item-icon p {
@@ -928,6 +941,13 @@ section {
   overflow: hidden;
   position: relative;
   margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio .portfolio-item .portfolio-wrap {
+    display: flex;
+    justify-content: center;
+  }
 }
 #portfolio .portfolio-item .portfolio-wrap:hover img {
   opacity: 0.4;
@@ -1254,12 +1274,17 @@ section {
 }
 
 #form .hire__section p,
+#form .hire__section div,
 #form .hire__section a{
   font-size: 1.6rem;
   text-align: left;
   margin-bottom: 1.2rem;
 }
 
+#form .hire__section a {
+  display: block;
+  margin-bottom: 0.6rem
+}
 @media (max-width: 600px) { 
   #form .hire__section: {
     
