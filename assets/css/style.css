@@ -310,6 +310,12 @@ h6 {
 #hero .hero__content .hero__content--heading span {
   color: var(--color-secondary);
 }
+@media (max-width: 1080px) {
+  #hero .hero__content .hero__content--heading,
+  #hero .hero__content .hero__content--heading span {
+    font-size: 4.5rem;
+  }
+}
 @media (max-width: 626px) {
   #hero .hero__content .hero__content--heading,
   #hero .hero__content .hero__content--heading span {
@@ -747,6 +753,15 @@ section {
   font-weight: 500;
   margin: 0;
 }
+@media (max-width: 1080px) {
+  #call-to-action {
+    padding: 2rem 0;
+  }
+  #call-to-action .cta-title {
+    /* margin-bottom: 1.2rem; */
+    font-size: 2rem;
+  }
+}
 @media (max-width: 516px) {
   #call-to-action .cta-title {
     margin-bottom: 1.2rem;
@@ -836,6 +851,11 @@ section {
 
 #technology .techno__item .techno__item-icon {
   margin: 30px 50px;
+}
+@media (max-width: 1080px) {
+  #technology .techno__item .techno__item-icon {
+    margin: 20px 25px;
+  }
 }
 
 #technology .techno__item .techno__item-icon img{
@@ -1218,14 +1238,14 @@ section {
 #form .section-title{
   color: var(--color-primary);
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 3rem;
   text-align: left;
   margin-bottom: 2.4rem;
 }
 
 #form .hire__section p,
 #form .hire__section a{
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: left;
   margin-bottom: 1.2rem;
 }
@@ -1242,11 +1262,17 @@ section {
 }
 .footer {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   column-gap: 2rem;
 }
 .footer .footer__logo {
-  grid-column: 1/5;
+  grid-column: 1/4;
+}
+@media (max-width: 1080px) { 
+.footer .footer__logo {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
 }
 .footer .footer__logo .footer__logo--img {
   margin-bottom: 1.4rem;
@@ -1261,7 +1287,7 @@ section {
   line-height: 1.8;
 }
 .footer .footer__contacts {
-  grid-column: 5/8;
+  /* grid-column: 3/9; */
 }
 .footer .footer__contacts h3,
 .footer .footer__addresses h3 {
@@ -1283,12 +1309,18 @@ section {
   font-size: 2.2rem;
 }
 .footer .footer__addresses {
-  grid-column: 8/17;
+  /* grid-column: 8/17; */
+  grid-column: 4/9;
 }
 .footer .footer__addresses .addresses {
-  display: flex;
+  /* display: flex;
   gap: 2rem;
+  max-width: 33.33%; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
 }
+
 .footer .footer__addresses .addresses .address h4 {
   font-size: 1.6rem;
   letter-spacing: 1px;
@@ -1330,7 +1362,7 @@ section {
     row-gap: 4.6rem;
   }
   .footer .footer__logo {
-    grid-column: 1/5;
+    grid-column: 1/6;
     grid-row: 1/2;
   }
   .footer .footer__contacts {
