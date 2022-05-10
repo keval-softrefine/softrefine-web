@@ -576,7 +576,7 @@ section {
   font-size: 1.4rem;
   line-height: 2.4rem;
   margin-bottom: 0;
-  text-align: left;
+  text-align: center;
 }
 
 
@@ -807,7 +807,7 @@ section {
 }
 
 #technology .nav {
-  justify-content: center
+  justify-content: center;
 }
 #technology .nav-pills .nav-link.active {
   background-color: transparent;
@@ -824,6 +824,7 @@ section {
   border-radius: 0;
   padding: 0.5rem 4rem;
   color: var(--color-primary);
+  font-weight: 600
 }
 
 #technology .techno__item {
@@ -1222,7 +1223,8 @@ section {
   margin-bottom: 2.4rem;
 }
 
-#form .hire__section p{
+#form .hire__section p,
+#form .hire__section a{
   font-size: 2rem;
   text-align: left;
   margin-bottom: 1.2rem;
@@ -1376,4 +1378,8 @@ section {
   padding: 3rem 0;
   color: var(--color-primary);
   font-size: 1.4rem;
+}
+
+.hybrid-icon img {
+  width: 32px;
 }
