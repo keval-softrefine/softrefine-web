@@ -1,4 +1,12 @@
 /*--------------------------------------------------------------
+# BOOTSTRAP CLASSES OVERRIDE
+--------------------------------------------------------------*/
+
+.container {
+  max-width: 1200px;
+}
+
+/*--------------------------------------------------------------
 # GENERAL SETTINGS
 --------------------------------------------------------------*/
 
@@ -96,14 +104,25 @@ h6 {
   background: #fff;
   transition: all 0.5s;
   z-index: 999;
-  height: 8rem;
+  height: 7rem;
+  padding: 0 2.4rem;
+}
+@media (max-width: 26.56em) {
+  #header {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 23.44em) {
+  #header {
+    padding: 0 1.4rem;
+  }
 }
 #header.header-transparent {
   background: transparent;
 }
 #header.header-scrolled {
   background: #fff;
-  height: 8rem;
+  height: 7rem;
   box-shadow: 0 0 3rem rgba(127, 137, 161, 0.3);
 }
 #header .header__logo a img {
@@ -169,14 +188,6 @@ h6 {
 }
 .mobile-nav-toggle.bi-x {
   color: #fff;
-}
-@media (max-width: 62em) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-  .navbar ul {
-    display: none;
-  }
 }
 .navbar-mobile {
   position: fixed;
@@ -249,6 +260,61 @@ h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+.navbar-toggler-icon {
+  border: none;
+}
+#mobile-navbar {
+  display: none;
+  margin-left: 1rem;
+}
+@media (max-width: 62em) {
+  #navbar {
+    display: none;
+  }
+  #mobile-navbar {
+    display: block;
+  }
+  .navbar-toggler {
+    border: none;
+    margin-right: 1.6rem;
+    font-size: 2rem;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  .offcanvas-header .btn-close {
+    border: none;
+    margin-right: 1.6rem;
+    font-size: 2rem;
+  }
+  .navbar-light .navbar-brand {
+    max-width: 24rem;
+  }
+  .navbar-light .navbar-brand img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+  .offcanvas-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .offcanvas-body .navbar-nav .nav-item:hover {
+    background-color: var(--color-primary);
+    width: 100%;
+    transition: all 0.5 ease-in-out;
+  }
+  .offcanvas-body .navbar-nav .nav-item .nav-link {
+    color: #111;
+  }
+  .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+    color: #eee;
+    width: fit-content;
+    margin: 0 auto;
+    transition: all 0.5 ease-in-out;
+  }
+}
 
 /*--------------------------------------------------------------
 # HERO SECTION
@@ -266,7 +332,7 @@ h6 {
   align-items: center;
   gap: 1rem;
 }
-@media (max-width: 59.375em) {
+@media (max-width: 59.44em) {
   #hero {
     display: flex;
     flex-direction: column;
@@ -277,8 +343,9 @@ h6 {
     order: 2;
   }
   #hero .hero__img {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 2rem;
   }
   #hero .hero__img img {
     width: 100%;
@@ -286,7 +353,7 @@ h6 {
 }
 #hero .hero__content {
   grid-column: 1/7;
-  padding: 0 0 0 13.7rem;
+  padding: 0 0 0 10rem;
 }
 #hero .hero__content .hero__content--heading {
   color: var(--color-primary);
@@ -299,10 +366,10 @@ h6 {
 #hero .hero__content .hero__content--heading span {
   color: var(--color-secondary);
 }
-@media (max-width: 67.5em) {
+@media (max-width: 77.875em) {
   #hero .hero__content .hero__content--heading,
   #hero .hero__content .hero__content--heading span {
-    font-size: 4.4rem;
+    font-size: 4.6rem;
   }
 }
 @media (max-width: 39.125em) {
@@ -318,7 +385,7 @@ h6 {
 }
 @media (max-width: 32.25em) {
   #hero .hero__content {
-    padding: 0 2.4rem;
+    padding: 0 2rem;
   }
   #hero .hero__content .hero__content--heading,
   #hero .hero__content .hero__content--heading span {
@@ -334,6 +401,7 @@ h6 {
   max-width: 75ch;
   line-height: 1.6;
 }
+
 #hero .hero__content .hero__content--btn {
   position: relative;
   font-size: 1.4rem;
@@ -356,7 +424,7 @@ h6 {
   justify-content: center;
 }
 #hero .hero__img img {
-  width: 75%;
+  width: 85%;
   animation: up-down 8s ease infinite;
 }
 @keyframes up-down {
@@ -403,7 +471,6 @@ h6 {
     padding: 7rem 0 6rem 0;
   }
 }
-
 /*--------------------------------------------------------------
 # SECTIONS
 --------------------------------------------------------------*/
@@ -454,9 +521,15 @@ section {
   display: flex;
   align-items: center;
 }
-@media (max-width: 62.25em) {
-  #about .about-content {
-    padding: 0 1.6rem;
+#about .about-content h2 {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 3.6rem;
+  text-align: center;
+}
+@media (max-width: 26.56em) {
+  #about .about-content h2 {
+    font-size: 3rem;
   }
 }
 #about .about-content p {
@@ -464,12 +537,6 @@ section {
   max-width: 75ch;
   margin: 0 auto;
   margin-bottom: 1em;
-}
-#about .about-content h2 {
-  color: var(--color-primary);
-  font-weight: 700;
-  font-size: 3.6rem;
-  text-align: center;
 }
 #about .about-img {
   position: relative;
@@ -494,6 +561,24 @@ section {
   content: "";
   background-color: #ebf1fa;
   transition: 0.5s;
+}
+@media (max-width: 78em) {
+  #about .about-content {
+    padding: 0 2rem;
+  }
+  #about .about-img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4.8rem;
+  }
+  #about .about-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 48em) {
+  #about .about__container {
+    flex-direction: column;
+  }
 }
 @media (max-width: 38.125em) {
   #about .about-img::before {
@@ -528,11 +613,25 @@ section {
   font-size: 3.6rem;
   text-align: center;
 }
+@media (max-width: 26.56em) {
+  #services .section-header h3 {
+    font-size: 3rem;
+  }
+  #services .services-content .services__details {
+    padding: 0 2rem;
+  }
+}
 #services .section-header p {
   color: var(--color-primary);
   font-weight: 500;
   font-size: 1.8rem;
   text-align: center;
+  max-width: 50%;
+}
+@media (max-width: 65.0625em) {
+  #services .section-header p {
+    max-width: 70%;
+  }
 }
 @media (max-width: 32.25em) {
   #services .section-header {
@@ -597,6 +696,11 @@ CLIENTS SECTION
   text-align: center;
   margin-bottom: 2.4rem;
 }
+@media (max-width: 26.56em) {
+  #clients .section-header h3 {
+    font-size: 3rem;
+  }
+}
 #clients img {
   opacity: 1;
   transition: 0.3s;
@@ -640,6 +744,11 @@ CLIENTS SECTION
   text-align: center;
   margin-bottom: 2.4rem;
 }
+@media (max-width: 26.56em) {
+  #why-us .section-header h3 {
+    font-size: 3rem;
+  }
+}
 #why-us .why-us-content {
   margin-left: 6rem;
 }
@@ -652,6 +761,14 @@ CLIENTS SECTION
   #why-us .why-us-content {
     padding: 3rem 3rem 0;
     margin-left: 0;
+  }
+}
+@media (max-width: 26.56em) {
+  #why-us .why-us-content {
+    padding: 0 2rem;
+  }
+  .why-us-img {
+    margin-bottom: 2rem;
   }
 }
 #why-us .why-us-content .features {
@@ -715,6 +832,11 @@ CLIENTS SECTION
   text-align: center;
   margin-bottom: 2.4rem;
 }
+@media (max-width: 26.56em) {
+  #stats .section-header h3 {
+    font-size: 3rem;
+  }
+}
 #stats .counters {
   padding-top: 2rem;
 }
@@ -730,13 +852,27 @@ CLIENTS SECTION
   font-size: 1.6rem;
   color: var(--color-primary);
 }
-@media (max-width: 32em) {
+@media (max-width: 36em) {
+  #stats .section-header h3 {
+    font-size: 3.2rem;
+    padding: 0 1.4rem;
+  }
   #stats .counters span {
     font-size: 3.6rem;
   }
   #stats .counters p {
     font-size: 1.4rem;
-    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 26em) {
+  #stats .section-header h3 {
+    font-size: 2.6rem;
+  }
+  #stats .counters span {
+    font-size: 2.4rem;
+  }
+  #stats .counters {
+    padding: 0 2rem;
   }
 }
 
@@ -746,7 +882,7 @@ CLIENTS SECTION
 #call-to-action {
   background: var(--color-primary);
   background-size: cover;
-  padding: 4rem 0;
+  padding: 3.6rem 1.6rem;
 }
 #call-to-action .cta-title {
   color: #fff;
@@ -773,6 +909,13 @@ CLIENTS SECTION
   #call-to-action .cta-title {
     margin-bottom: 1.2rem;
     font-size: 2.4rem;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 22em) {
+  #call-to-action .cta-title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
   }
 }
 #call-to-action .cta-btn {
@@ -792,6 +935,7 @@ CLIENTS SECTION
   background: var(--color-primary);
   border: 1px solid #fff;
 }
+
 .technology-section {
   padding: 6rem 0;
   font-size: 1.8rem;
@@ -803,6 +947,11 @@ CLIENTS SECTION
   font-weight: 700;
   position: relative;
   margin-bottom: 4rem;
+}
+@media (max-width: 26.56em) {
+  #technology .section-header h2 {
+    font-size: 3rem;
+  }
 }
 #technology .section-header p {
   text-align: center;
@@ -875,6 +1024,11 @@ CLIENTS SECTION
   font-size: 3.6rem;
   text-align: center;
   margin-bottom: 2.4rem;
+}
+@media (max-width: 26.56em) {
+  #portfolio .section-header h3 {
+    font-size: 3rem;
+  }
 }
 #portfolio #portfolio-flters {
   padding: 0;
@@ -1158,9 +1312,14 @@ CLIENTS SECTION
 #form .section-title {
   color: var(--color-primary);
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.6rem;
   text-align: left;
   margin-bottom: 2.4rem;
+}
+@media (max-width: 26.56em) {
+  #form .section-title {
+    font-size: 3rem;
+  }
 }
 #form .hire__section p,
 #form .hire__section div,
@@ -1169,14 +1328,9 @@ CLIENTS SECTION
   text-align: left;
   margin-bottom: 1.2rem;
 }
-
 #form .hire__section a {
   display: block;
   margin-bottom: 0.6rem;
-}
-@media (max-width: 600px) {
-  #form .hire__section: {
-  }
 }
 #form .hire__section a {
   color: var(--color-secondary);
@@ -1186,7 +1340,7 @@ CLIENTS SECTION
 # FOOTER
 --------------------------------------------------------------*/
 #footer {
-  padding: 5.2rem 0;
+  padding: 3.2rem 1.6rem;
 }
 .footer {
   display: flex;
@@ -1239,7 +1393,7 @@ CLIENTS SECTION
 }
 .footer .footer__addresses .addresses .address p {
   color: #222;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -1274,8 +1428,13 @@ CLIENTS SECTION
   text-align: center;
   padding: 3rem 0;
   color: var(--color-primary);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .hybrid-icon img {
   width: 3.2rem;
+}
+@media (max-width: 26em) {
+  .footer {
+    padding: 0 2rem;
+  }
 }

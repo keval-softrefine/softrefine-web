@@ -44,6 +44,47 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
+
+      <!-- MOBILE NAVIGATION -->
+      <nav id="mobile-navbar" class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./assets/img/softrefine/SoftrfineLog.png" alt="softrefine"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="#"><img src="./assets/img/softrefine/SoftrfineLog.png" alt="softrefine"></a>
+              <button type="button" id="btn__mobile" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#why-us">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -109,10 +150,10 @@
       <div class="container services-content" data-aos="fade-up">
         <header class="section-header">
           <h3>Our Services</h3>
-          <p>We are an established web and mobile solution providers and 
+          <p>We are an established web and mobile solution providers and
             We take pride in delivering reliable & efficient solutions.</p>
         </header>
-        <div class="row g-5">
+        <div  class="row g-5 services__details">
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
               <div class="icon" style="background: #fceef3;"><i class="bi bi-columns" style="color: #ff689b;"></i>
@@ -125,8 +166,9 @@
           </div>
           <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
-              <div class="icon" style="background: #fff0da;"><i class="bi bi-file-code" style="color: #e98e06;"></i>
+              <div class="icon" style="background: #fceef3;"><i class="bi bi-layout-text-window-reverse" style="color: #e98e06;"></i>
               </div>
+              <!-- 3e98e06 -->
               <h4 class="title"><a href="">Frontend Development</a></h4>
               <p class="description">Front-end developers at Softrefine have vast experience in making user-friendly web
                 interfaces
@@ -155,8 +197,7 @@
           </div>
           <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200"">
         <div class=" box">
-            <div class="icon hybrid-icon" style="background: #e1eeff;">
-              <img src="/assets/img/icons/Hybrid.png" alt="Hybrid app logo">
+           <div class="icon" style="background: #ecebff;"><i class="bi bi-file-code" style="color: #8660fe;"></i>
             </div>
             <h4 class="title"><a href="">Hybrid App Development</a></h4>
             <p class="description">We provide a single app that can run on multiple operating systems including Windows,
@@ -214,32 +255,32 @@
           <p>Because it's about making ideas happen!</p>
         </header>
         <div class="row why-us__container">
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="50">
             <div class="why-us-img">
               <img src="assets/img/why-us-3.jpg" alt="image of office premises" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="why-us-content">
-              <div class="features clearfix" data-aos="fade-up" data-aos-delay="100">
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="50">
                 <i class="bi bi-building" style="color: #589af1;"></i>
                 <h4>Established MNC with years of experience.
                 </h4>
               </div>
-              <div class="features clearfix" data-aos="fade-up" data-aos-delay="200">
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="100">
                 <i class="bi bi-code-slash" style="color: #ffb774;"></i>
                 <h4>Experts in cutting-edge technologies.
                 </h4>
               </div>
-              <div class="features clearfix" data-aos="fade-up" data-aos-delay="300">
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="150">
                 <i class="bi bi-tags" style="color: #f058dc ;"></i>
                 <h4>Quality services at affordable prices.</h4>
               </div>
-              <div class="features clearfix" data-aos="fade-up" data-aos-delay="300">
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-globe" style="color: #845ef7;"></i>
                 <h4>Clients across the globe.</h4>
               </div>
-              <div class="features clearfix" data-aos="fade-up" data-aos-delay="300">
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="250">
                 <i class="bi bi-person-check" style="color: #51cf66;"></i>
                 <h4>Customer centric approch.</h4>
               </div>
@@ -350,19 +391,32 @@
           aria-labelledby="pills-home-tab">
           <div class="d-flex justify-content-center">
             <div class="techno__item col-12 col-sm-9">
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Angular" data-bs-placement="top"><img src="assets/img/icons/angular.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Type Script" data-bs-placement="top"><img src="assets/img/icons/typescript.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Material UI" data-bs-placement="top"><img src="assets/img/icons/icons8-material-ui-96.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="React" data-bs-placement="top"><img src="assets/img/icons/react-icon.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Redux" data-bs-placement="top"><img src="assets/img/icons/redux.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Bootstrap" data-bs-placement="top"><img src="assets/img/icons/bootstrap.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Vue.js" data-bs-placement="top"><img src="assets/img/icons/vuejs.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="SASS" data-bs-placement="top"><img src="assets/img/icons/sass.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="jQuery" data-bs-placement="top"><img src="assets/img/icons/jquery.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="CSS3" data-bs-placement="top"><img src="assets/img/icons/css3.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="HTML5" data-bs-placement="top"><img src="assets/img/icons/html5.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Java Script" data-bs-placement="top"><img src="assets/img/icons/javascript.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Wordpress" data-bs-placement="top"><img src="assets/img/icons/wordpress-icon.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Angular" data-bs-placement="top"><img
+                  src="assets/img/icons/angular.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Type Script" data-bs-placement="top"><img
+                  src="assets/img/icons/typescript.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Material UI" data-bs-placement="top"><img
+                  src="assets/img/icons/icons8-material-ui-96.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="React" data-bs-placement="top"><img
+                  src="assets/img/icons/react-icon.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Redux" data-bs-placement="top"><img
+                  src="assets/img/icons/redux.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Bootstrap" data-bs-placement="top"><img
+                  src="assets/img/icons/bootstrap.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Vue.js" data-bs-placement="top"><img
+                  src="assets/img/icons/vuejs.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="SASS" data-bs-placement="top"><img
+                  src="assets/img/icons/sass.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="jQuery" data-bs-placement="top"><img
+                  src="assets/img/icons/jquery.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="CSS3" data-bs-placement="top"><img
+                  src="assets/img/icons/css3.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="HTML5" data-bs-placement="top"><img
+                  src="assets/img/icons/html5.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Java Script" data-bs-placement="top"><img
+                  src="assets/img/icons/javascript.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Wordpress" data-bs-placement="top"><img
+                  src="assets/img/icons/wordpress-icon.png" alt=""></div>
             </div>
           </div>
         </div>
@@ -371,17 +425,28 @@
             aria-labelledby="pills-home-tab">
             <div class="d-flex justify-content-center">
               <div class="techno__item col-12 col-sm-8">
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Laravel" data-bs-placement="top"><img src="assets/img/icons/laravel.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Codeigniter" data-bs-placement="top"><img src="assets/img/icons/codeigniter.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Python" data-bs-placement="top"><img src="assets/img/icons/python.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Nodejs" data-bs-placement="top"><img src="assets/img/icons/nodejs.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Php" data-bs-placement="top"><img src="assets/img/icons/php-icon.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="dJango" data-bs-placement="top"><img src="assets/img/icons/django.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Deno" data-bs-placement="top"><img src="assets/img/icons/deno.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Flask" data-bs-placement="top"><img src="assets/img/icons/flask.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Spring" data-bs-placement="top"><img src="assets/img/icons/spring-framework.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Expressjs" data-bs-placement="top"><img src="assets/img/icons/expressjs.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title=".Net" data-bs-placement="top"><img src="assets/img/icons/microsoft-net-icon.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Laravel" data-bs-placement="top"><img
+                    src="assets/img/icons/laravel.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Codeigniter" data-bs-placement="top"><img
+                    src="assets/img/icons/codeigniter.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Python" data-bs-placement="top"><img
+                    src="assets/img/icons/python.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Nodejs" data-bs-placement="top"><img
+                    src="assets/img/icons/nodejs.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Php" data-bs-placement="top"><img
+                    src="assets/img/icons/php-icon.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="dJango" data-bs-placement="top"><img
+                    src="assets/img/icons/django.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Deno" data-bs-placement="top"><img
+                    src="assets/img/icons/deno.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Flask" data-bs-placement="top"><img
+                    src="assets/img/icons/flask.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Spring" data-bs-placement="top"><img
+                    src="assets/img/icons/spring-framework.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Expressjs" data-bs-placement="top"><img
+                    src="assets/img/icons/expressjs.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title=".Net" data-bs-placement="top"><img
+                    src="assets/img/icons/microsoft-net-icon.png" alt=""></div>
               </div>
             </div>
           </div>
@@ -389,15 +454,24 @@
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
           <div class="d-flex justify-content-center">
             <div class="techno__item col-12 col-sm-8">
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Iconic" data-bs-placement="top"><img src="assets/img/icons/ionic.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Swift" data-bs-placement="top"><img src="assets/img/icons/swift.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Android" data-bs-placement="top"><img src="assets/img/icons/android.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Kotlin" data-bs-placement="top"><img src="assets/img/icons/kotlin-icon.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="java" data-bs-placement="top"><img src="assets/img/icons/java.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="React Native" data-bs-placement="top"><img src="assets/img/icons/react-native.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Dart" data-bs-placement="top"><img src="assets/img/icons/dart.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Flutter" data-bs-placement="top"><img src="assets/img/icons/flutter-icon.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="iOS" data-bs-placement="top"><img src="assets/img/icons/icons8-ios-logo-90.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Iconic" data-bs-placement="top"><img
+                  src="assets/img/icons/ionic.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Swift" data-bs-placement="top"><img
+                  src="assets/img/icons/swift.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Android" data-bs-placement="top"><img
+                  src="assets/img/icons/android.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Kotlin" data-bs-placement="top"><img
+                  src="assets/img/icons/kotlin-icon.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="java" data-bs-placement="top"><img
+                  src="assets/img/icons/java.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="React Native" data-bs-placement="top"><img
+                  src="assets/img/icons/react-native.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Dart" data-bs-placement="top"><img
+                  src="assets/img/icons/dart.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Flutter" data-bs-placement="top"><img
+                  src="assets/img/icons/flutter-icon.png" alt=""></div>
+              <div class="techno__item-icon" data-bs-toggle="tooltip" title="iOS" data-bs-placement="top"><img
+                  src="assets/img/icons/icons8-ios-logo-90.png" alt=""></div>
             </div>
           </div>
         </div>
@@ -611,24 +685,28 @@
     <!-- =================================== -->
     <!-- ======= CONTACT US ======= -->
     <!-- =================================== -->
-    <section id="form" class="form section-bg">
+    <section id="form" class="form section-bg" data-aos="fade-up" data-aos-delay="200">
       <div class="container" data-aos="zoom-in">
         <div class="row justify-content-between">
           <div class="col-12 col-sm-5">
             <div class="hire__section">
               <h1 class="section-title">We are hiring!</h1>
-              <p>We are looking for driven, ambitious, goal oriented professionals who want to work hard, make difference and succeed.</p>
+              <p>We are looking for driven, ambitious, goal oriented professionals who want to work hard, make
+                difference and succeed.</p>
               <p>Does this sound like you? Make your next move.</p>
-              <div class="d-flex">Send you cv to <a href="mailto:hr@softrefine.com" class="ms-2">hr@softrefine.com</a></div>
-              <div class="d-flex"> or you can directly contact HR <a href="tel:+916474578754" class="ms-2">+91 64745 78754</a></div>
+              <div class="d-flex">Send you cv to <a href="mailto:hr@softrefine.com" class="ms-2">hr@softrefine.com</a>
+              </div>
+              <div class="d-flex"> or you can directly contact HR <a href="tel:+916474578754" class="ms-2">+91 64745
+                  78754</a></div>
             </div>
           </div>
           <div class="col-12 col-sm-5 hire__section">
             <h1 class="section-title">Bussiness Inquiry</h1>
             <p>For any business inquiries please contact us directly.</p>
             <a href="tel:+916474578754"><i class="bi bi-telephone me-3" style="color: #1d1d57;"></i> +91 64745 78754</a>
-            <a href="mailto:sales@softrefine.gmail.com"><i class="bi bi-envelope me-3" style="color: #1d1d57;"></i> sales@softrefine.com</a>
-            <p><i class="bi bi-clock me-3" style="color: #1d1d57;"></i>  10 AM - 7 PM</p>
+            <a href="mailto:sales@softrefine.gmail.com"><i class="bi bi-envelope me-3" style="color: #1d1d57;"></i>
+              sales@softrefine.com</a>
+            <p><i class="bi bi-clock me-3" style="color: #1d1d57;"></i> 10 AM - 7 PM</p>
           </div>
         </div>
       </div>
