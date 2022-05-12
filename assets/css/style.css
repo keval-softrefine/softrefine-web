@@ -23,6 +23,7 @@ body {
   background: #fff;
   color: #111;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 *::selection {
   color: #fff;
@@ -102,10 +103,15 @@ h6 {
   z-index: 999;
   height: 7rem;
   padding: 0 4.8rem;
+  margin-bottom: 4rem;
 }
 #header .header {
   margin: 0;
   padding: 1rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 #header.header-transparent {
   background: transparent;
@@ -328,7 +334,7 @@ h6 {
   padding: 8rem 4.8rem;
 }
 #hero .hero__img {
-  flex-basis: 45%;
+  flex-basis: 50%;
 }
 #hero .hero__img img {
   width: 100%;
@@ -337,7 +343,7 @@ h6 {
   animation: up-down 12s ease infinite;
 }
 #hero .hero__content {
-  flex-basis: 55%;
+  flex-basis: 50%;
 }
 #hero .hero__content .hero__content--heading {
   color: var(--color-primary);
@@ -349,6 +355,18 @@ h6 {
 }
 #hero .hero__content .hero__content--heading span {
   color: var(--color-secondary);
+}
+@media (max-width: 74.1875em) {
+  #hero .hero__content .hero__content--heading,
+  #hero .hero__content .hero__content--heading span {
+    font-size: 4.8rem;
+  }
+}
+@media (max-width: 60.31em) {
+  #hero .hero__content .hero__content--heading,
+  #hero .hero__content .hero__content--heading span {
+    font-size: 3.6rem;
+  }
 }
 #hero .hero__content .hero__content--text {
   font-size: 1.6rem;
@@ -680,20 +698,33 @@ CLIENTS SECTION
 .why-us__container {
   display: flex;
   align-items: center;
+  gap: 2.4rem;
+  position: relative;
 }
-#why-us {
+.why-us-img {
+  flex-basis: 50%;
+  height: 100%;
+  width: 100%;
+}
+.why-us-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.why-us-content {
+  flex-basis: 50%;
+}
+/* #why-us {
   padding: 8rem 4.8rem;
+  padding-left: 0;
   background-color: #f5f8fd;
-}
+} */
 #why-us .section-header h3 {
   color: var(--color-primary);
   font-weight: 700;
   font-size: 3.6rem;
   text-align: center;
   margin-bottom: 2.4rem;
-}
-#why-us .why-us-content {
-  margin-left: 6rem;
 }
 #why-us .why-us-content .features {
   margin: 0 0 1.5rem 0;
@@ -732,37 +763,34 @@ CLIENTS SECTION
   font-size: 1.4rem;
   color: var(--color-primary);
 }
-@media (max-width: 62em) {
-  #why-us .why-us-content {
-    padding-top: 3rem;
+@media (max-width: 55.81em) {
+  .why-us-img {
+    flex-basis: 45%;
+  }
+  .why-us-content {
+    flex-basis: 55%;
   }
 }
-@media (max-width: 37.5em) {
-  #why-us .why-us-content .features i {
-    font-size: 2rem;
+@media (max-width: 51.69em) {
+  .why-us__container {
+    flex-direction: column;
   }
-}
-@media (max-width: 32.25em) {
-  #why-us .why-us-content {
-    padding: 3rem 3rem 0;
-    margin-left: 0;
-  }
-  #why-us .why-us-content .features h4 {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 26.56em) {
-  #why-us {
-    padding: 8rem 3.6rem;
-  }
-  #why-us .why-us-content {
-    padding: 0 2rem;
-  }
-  #why-us .section-header h3 {
-    font-size: 3rem;
+  .why-us-content {
+    flex-basis: 100%;
+    padding: 0 4.8rem;
   }
   .why-us-img {
-    margin-bottom: 2rem;
+    flex-basis: 100%;
+    padding: 0;
+  }
+  .why-us-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 26.54em) {
+  .why-us-content {
+    padding: 0 3.6rem;
+    padding-bottom: 6rem;
   }
 }
 
@@ -781,6 +809,12 @@ CLIENTS SECTION
 }
 #stats .counters {
   padding-top: 2rem;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+#stats .counters .counter {
+  flex-basis: 25%;
 }
 #stats .counters span {
   font-weight: bold;
@@ -794,35 +828,23 @@ CLIENTS SECTION
   font-size: 1.6rem;
   color: var(--color-primary);
 }
-@media (max-width: 36em) {
-  #stats .section-header h3 {
-    font-size: 3.2rem;
-    padding: 0 1.4rem;
-  }
-  #stats .counters span {
-    font-size: 3.6rem;
-  }
-  #stats .counters p {
-    font-size: 1.4rem;
+@media (max-width: 52.375em) {
+  #stats .counters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
-@media (max-width: 26em) {
-  #stats .section-header h3 {
-    font-size: 2.6rem;
-  }
-  #stats .counters span {
-    font-size: 2.4rem;
-  }
+@media (max-width: 28.5em) {
   #stats .counters {
-    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 @media (max-width: 26.56em) {
   #stats {
     padding: 8rem 3.6rem;
-  }
-  #stats .section-header h3 {
-    font-size: 3rem;
   }
 }
 
@@ -832,7 +854,12 @@ CLIENTS SECTION
 #call-to-action {
   background: var(--color-primary);
   background-size: cover;
-  padding: 3.6rem 1.6rem;
+  padding: 6rem 4.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.4rem;
 }
 #call-to-action .cta-title {
   color: #fff;
@@ -857,8 +884,22 @@ CLIENTS SECTION
   background: var(--color-primary);
   border: 1px solid #fff;
 }
+@media (max-width: 48em) {
+  #call-to-action {
+    flex-direction: column;
+  }
+}
+@media (max-width: 26.56em) {
+  #call-to-action {
+    padding: 6rem 3.6rem;
+  }
+}
+
+/* -----------------------------
+ TECHNOLOGY SECTION
+--------------------------------*/
 .technology-section {
-  padding: 6rem 0;
+  padding: 8rem 0;
   font-size: 1.8rem;
 }
 #technology .section-header h2 {
@@ -913,12 +954,6 @@ CLIENTS SECTION
   margin: 0;
 }
 @media (max-width: 67.5em) {
-  #call-to-action {
-    padding: 2rem 0;
-  }
-  #call-to-action .cta-title {
-    font-size: 2rem;
-  }
   #technology .techno__item .techno__item-icon {
     margin: 2rem 2.5rem;
   }
@@ -928,29 +963,9 @@ CLIENTS SECTION
     width: 100%;
   }
 }
-@media (min-width: 62em) {
-  #call-to-action .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-@media (max-width: 32.25em) {
-  #call-to-action .cta-title {
-    margin-bottom: 1.2rem;
-    font-size: 2.4rem;
-    padding: 0 2rem;
-  }
-}
 @media (max-width: 26.56em) {
   #technology .section-header h2 {
     font-size: 3rem;
-  }
-}
-@media (max-width: 22em) {
-  #call-to-action .cta-title {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
   }
 }
 
@@ -1090,18 +1105,15 @@ CLIENTS SECTION
 #portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   #portfolio .portfolio-item .portfolio-wrap {
     display: flex;
     justify-content: center;
   }
-}
+} */
 @media (max-width: 26.56em) {
   #portfolio {
     padding: 8rem 3.6rem;
-  }
-  #portfolio .section-header h3 {
-    font-size: 3rem;
   }
 }
 
@@ -1207,8 +1219,106 @@ CLIENTS SECTION
 }
 
 /*--------------------------------------------------------------
-# FOOTER
+# CONTACT
 --------------------------------------------------------------*/
+
+#contact {
+  padding: 8rem 4.8rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+  justify-content: space-between;
+}
+#contact .contact__candidate {
+  flex-basis: 45%;
+}
+#contact .contact__candidate .contact__candidate--title h2 {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+}
+#contact .contact__candidate .contact__candidate--text p,
+#contact .contact__candidate .contact__candidate--text div strong {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+#contact .contact__candidate .contact__candidate--text div span a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-left: 0.5rem;
+}
+#contact .contact__client {
+  flex-basis: 45%;
+}
+#contact .contact__client .contact__client--title h2 {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+}
+#contact .contact__client .contact__client--text div i {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+#contact .contact__client .contact__client--text .contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+#contact .contact__client .contact__client--text div .icon {
+  display: inline-block;
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+#contact .contact__client .contact__client--text p,
+#contact .contact__client .contact__client--text div strong {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+#contact .contact__client .contact__client--text .contact {
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+}
+#contact .contact__client .contact__client--text .contact .contact__icon {
+  position: relative;
+  background-color: rgba(225, 74, 74, 0.1);
+  height: 4.4rem;
+  width: 4.4rem;
+  border-radius: 50%;
+}
+#contact .contact__client .contact__client--text .contact .contact__icon i {
+  position: absolute;
+  top: 50%;
+  color: var(--color-secondary);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contact .contact__client .contact__client--text div span,
+#contact .contact__client .contact__client--text div span a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-left: 0.5rem;
+}
+@media (max-width: 44.25em) {
+  #contact {
+    flex-direction: column;
+  }
+}
+@media (max-width: 26.54em) {
+  #contact {
+    padding: 8rem 3.6rem;
+  }
+}
+/*-------------------------------------------------------------- # FOOTER --------------------------------------------------------------*/
 #footer {
   padding: 6rem 4.8rem;
 }
@@ -1243,45 +1353,13 @@ CLIENTS SECTION
   letter-spacing: 1px;
   font-weight: 700;
   color: var(--color-primary);
-  margin-bottom: 0.8rem;
+  /* margin-bottom: 0.8rem; */
 }
 .footer .footer__addresses .addresses .address p {
   color: #222;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.8;
-}
-@media (max-width: 75em) {
-  .footer {
-    flex-direction: column;
-    gap: 5.2rem;
-  }
-  .footer .footer__logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4.4rem;
-  }
-  .footer .footer__logo .footer__logo--img,
-  .footer .footer__logo .footer__logo--text {
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 35.95em) {
-  .footer {
-    padding: 0 1.6rem;
-  }
-  .footer .footer__logo {
-    flex-direction: column;
-  }
-  .footer .footer__addresses .addresses {
-    flex-direction: column;
-  }
-}
-@media (max-width: 26.56em) {
-  #footer {
-    padding: 6rem 3.6rem;
-  }
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1299,6 +1377,35 @@ CLIENTS SECTION
     transform: rotate(360deg);
   }
 }
+@media (max-width: 75em) {
+  .footer {
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+  .footer .footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+  }
+  .footer .footer__logo .footer__logo--img,
+  .footer .footer__logo .footer__logo--text {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 35.95em) {
+  .footer .footer__logo {
+    flex-direction: column;
+  }
+  .footer .footer__addresses .addresses {
+    flex-direction: column;
+  }
+}
+@media (max-width: 26.56em) {
+  #footer {
+    padding: 4rem 3.6rem;
+  }
+}
 
 /* ------------------
 COPYRIGHT SECTION
@@ -1311,9 +1418,4 @@ COPYRIGHT SECTION
 }
 .hybrid-icon img {
   width: 3.2rem;
-}
-@media (max-width: 26em) {
-  .footer {
-    padding: 0 2rem;
-  }
 }
