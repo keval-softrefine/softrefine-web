@@ -26,11 +26,12 @@
 
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top  header-transparent">
+  
+  <header id="header" class="fixed-top header-transparent wrapper">
     <div class="header">
       <div class="header__logo">
         <a href="#">
-          <img src="./assets/img/softrefine/SoftrfineLog.png" alt="softrefine">
+          <img src="./assets/img/softrefine/SoftrfineLog.png" alt="softrefine`">
         </a>
       </div>
       <nav id="navbar" class="navbar">
@@ -91,20 +92,25 @@
   <!-- ============================= -->
   <!-- ======= HERO SECTION ======= -->
   <!-- ============================= -->
-  <section id="hero" class="clearfix">
-    <div class="hero__content" data-aos="zoom-in" data-aos-delay="100">
-      <h2 class="hero__content--heading">Where Ideas Meet <span>Destination!</span></h2>
-      <p class="hero__content--text">
-        Softrefine is a leading technological service provider that uses cutting-edge technology to help you grow your
-        business. Our extensive knowledge and experience enable us to advise you on what is feasible, practical, and
-        cost-effective.
-      </p>
-      <div>
-        <a href="#about" class="hero__content--btn">Get Started</a>
+  <section class="clearfix">
+    <div class="wrapper">
+      <div id="hero" class="hero">
+        <div class="hero__content" data-aos="zoom-in" data-aos-delay="100">
+          <h2 class="hero__content--heading">Where Ideas Meet <span>Destination!</span></h2>
+          <p class="hero__content--text">
+            Softrefine is a leading technological service provider that uses cutting-edge technology to help you grow
+            your
+            business. Our extensive knowledge and experience enable us to advise you on what is feasible, practical, and
+            cost-effective.
+          </p>
+          <div>
+            <a href="#about" class="hero__content--btn">Get Started</a>
+          </div>
+        </div>
+        <div class="hero__img" data-aos="zoom-out" data-aos-delay="100">
+          <img src="assets/img/hero-img.svg" alt="illustration">
+        </div>
       </div>
-    </div>
-    <div class="hero__img" data-aos="zoom-out" data-aos-delay="100">
-      <img src="assets/img/hero-img.svg" alt="illustration">
     </div>
   </section>
 
@@ -112,7 +118,7 @@
     <!-- ============================== -->
     <!-- ======= ABOUT SECTION ======= -->
     <!-- ============================== -->
-    <section id="about" class="about">
+    <section id="about" class="about wrapper">
       <div class="flex about__container" data-aos="fade-up">
         <div class="about-img" data-aos="fade-right" data-aos-delay="100">
           <img src="assets/img/about-img-1.jpg" alt="Image of people holding hands">
@@ -135,8 +141,8 @@
     <!-- ============================== -->
     <!-- =======  SERVICES SECTION ======= -->
     <!-- ============================== -->
-    <section id="services" class="services section-bg">
-      <div class="services-content" data-aos="fade-up">
+    <section id="services" class="services section-bg ">
+      <div class="services-content wrapper" data-aos="fade-up">
         <header class="section-header">
           <h2>Our Services</h2>
           <p>We are an established web and mobile solution provider, and we take pride in delivering reliable and
@@ -210,7 +216,7 @@
     <!-- ============================== -->
     <!-- ======= CLIENTS SECTION ======= -->
     <!-- ============================== -->
-    <section id="clients" class="clients" data-aos="zoom-in">
+    <section id="clients" class="clients wrapper" data-aos="zoom-in">
       <header class="section-header">
         <h2>Our Clients</h2>
       </header>
@@ -234,7 +240,7 @@
     <!-- ============================== -->
     <!-- ======= WHY-US SECTION ======= -->
     <!-- ============================== -->
-    <section id="why-us" class="why-us" data-aos="fade-up">
+    <section id="why-us" class="why-us wrapper" data-aos="fade-up">
       <header class="section-header">
         <h2>Why Choose Us?</h2>
         <p>Because it's about making ideas happen!</p>
@@ -277,7 +283,7 @@
     <!-- ============================== -->
     <!-- ======= STATASTICS ======= -->
     <!-- ============================== -->
-    <section id="stats" class="statistics">
+    <section id="stats" class="statistics wrapper">
       <header class="section-header">
         <h2>Let's Crack Some Numbers</h2>
       </header>
@@ -320,14 +326,16 @@
     <!-- ======================================= -->
     <!-- ======= CTA SECTION ======= -->
     <!-- ======================================= -->
-    <section id="call-to-action" class="call-to-action" data-aos="zoom-out">
-      <div class="text-center text-lg-start">
-        <h4 class="cta-title">
-          Discover how we turn ideas into significant digital experiences.
-        </h4>
-      </div>
-      <div class="cta-btn-container text-center">
-        <a class="cta-btn align-middle" href="#">Start Now</a>
+    <section style="width: 100vw; background-color: #1d1d57;" data-aos="zoom-out">
+      <div id="call-to-action" class="call-to-action wrapper">
+        <div class="text-center text-lg-start">
+          <h4 class="cta-title">
+            Discover how we turn ideas into significant digital experiences.
+          </h4>
+        </div>
+        <div class="cta-btn-container text-center">
+          <a class="cta-btn align-middle" href="#">Start Now</a>
+        </div>
       </div>
     </section>
 
@@ -335,172 +343,178 @@
     <!-- ======= TECHNOLOGY SECTION ======= -->
     <!-- ======================================= -->
     <section class="technology-section section-bg" data-aos="zoom-in" data-aos-delay="100" id="technology">
-      <header class="section-header">
-        <h2>Our Technology Stack</h2>
-      </header>
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-            type="button" role="tab" aria-controls="pills-home" aria-selected="true">Frontend</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Backend</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mobile</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-database-tab" data-bs-toggle="pill" data-bs-target="#pills-database"
-            type="button" role="tab" aria-controls="pills-database" aria-selected="false">Database</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-servers-tab" data-bs-toggle="pill" data-bs-target="#pills-servers"
-            type="button" role="tab" aria-controls="pills-servers" aria-selected="false">Servers</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-others-tab" data-bs-toggle="pill" data-bs-target="#pills-others"
-            type="button" role="tab" aria-controls="pills-others" aria-selected="false">Others</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane container fade show active" id="pills-home" role="tabpanel"
-          aria-labelledby="pills-home-tab">
-          <div class="d-flex justify-content-center">
-            <div class="techno__item col-12 col-sm-9">
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Angular" data-bs-placement="top"><img
-                  src="assets/img/icons/angular.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Type Script" data-bs-placement="top"><img
-                  src="assets/img/icons/typescript.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Material UI" data-bs-placement="top"><img
-                  src="assets/img/icons/icons8-material-ui-96.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="React" data-bs-placement="top"><img
-                  src="assets/img/icons/react-icon.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Redux" data-bs-placement="top"><img
-                  src="assets/img/icons/redux.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Bootstrap" data-bs-placement="top"><img
-                  src="assets/img/icons/bootstrap.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Vue.js" data-bs-placement="top"><img
-                  src="assets/img/icons/vuejs.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="SASS" data-bs-placement="top"><img
-                  src="assets/img/icons/sass.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="jQuery" data-bs-placement="top"><img
-                  src="assets/img/icons/jquery.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="CSS3" data-bs-placement="top"><img
-                  src="assets/img/icons/css3.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="HTML5" data-bs-placement="top"><img
-                  src="assets/img/icons/html5.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Java Script" data-bs-placement="top"><img
-                  src="assets/img/icons/javascript.png" alt=""></div>
-              <!-- <div class="techno__item-icon" data-bs-toggle="tooltip" title="Wordpress" data-bs-placement="top"><img
-                  src="assets/img/icons/wordpress-icon.png" alt=""></div> -->
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="wrapper">
+
+        <header class="section-header">
+          <h2>Our Technology Stack</h2>
+        </header>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">Frontend</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Backend</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mobile</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-database-tab" data-bs-toggle="pill" data-bs-target="#pills-database"
+              type="button" role="tab" aria-controls="pills-database" aria-selected="false">Database</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-servers-tab" data-bs-toggle="pill" data-bs-target="#pills-servers"
+              type="button" role="tab" aria-controls="pills-servers" aria-selected="false">Servers</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-others-tab" data-bs-toggle="pill" data-bs-target="#pills-others"
+              type="button" role="tab" aria-controls="pills-others" aria-selected="false">Others</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane container fade show active" id="pills-home" role="tabpanel"
             aria-labelledby="pills-home-tab">
             <div class="d-flex justify-content-center">
+              <div class="techno__item col-12 col-sm-9">
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Angular" data-bs-placement="top"><img
+                    src="assets/img/icons/angular.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Type Script" data-bs-placement="top"><img
+                    src="assets/img/icons/typescript.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Material UI" data-bs-placement="top"><img
+                    src="assets/img/icons/icons8-material-ui-96.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="React" data-bs-placement="top"><img
+                    src="assets/img/icons/react-icon.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Redux" data-bs-placement="top"><img
+                    src="assets/img/icons/redux.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Bootstrap" data-bs-placement="top"><img
+                    src="assets/img/icons/bootstrap.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Vue.js" data-bs-placement="top"><img
+                    src="assets/img/icons/vuejs.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="SASS" data-bs-placement="top"><img
+                    src="assets/img/icons/sass.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="jQuery" data-bs-placement="top"><img
+                    src="assets/img/icons/jquery.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="CSS3" data-bs-placement="top"><img
+                    src="assets/img/icons/css3.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="HTML5" data-bs-placement="top"><img
+                    src="assets/img/icons/html5.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Java Script" data-bs-placement="top"><img
+                    src="assets/img/icons/javascript.png" alt=""></div>
+                <!-- <div class="techno__item-icon" data-bs-toggle="tooltip" title="Wordpress" data-bs-placement="top"><img
+                  src="assets/img/icons/wordpress-icon.png" alt=""></div> -->
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="tab-pane container fade show active" id="pills-home" role="tabpanel"
+              aria-labelledby="pills-home-tab">
+              <div class="d-flex justify-content-center">
+                <div class="techno__item col-12 col-sm-8">
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="Laravel" data-bs-placement="top"><img
+                      src="assets/img/icons/laravel.png" alt=""></div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="Codeigniter" data-bs-placement="top">
+                    <img src="assets/img/icons/codeigniter.png" alt="">
+                  </div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="Python" data-bs-placement="top"><img
+                      src="assets/img/icons/python.png" alt=""></div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="Nodejs" data-bs-placement="top"><img
+                      src="assets/img/icons/nodejs.png" alt=""></div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="Php" data-bs-placement="top"><img
+                      src="assets/img/icons/php-icon.png" alt=""></div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="dJango" data-bs-placement="top"><img
+                      src="assets/img/icons/django.png" alt=""></div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="Deno" data-bs-placement="top"><img
+                      src="assets/img/icons/deno.png" alt=""></div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="Flask" data-bs-placement="top"><img
+                      src="assets/img/icons/flask.png" alt=""></div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="Spring" data-bs-placement="top"><img
+                      src="assets/img/icons/spring-framework.png" alt=""></div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title="Expressjs" data-bs-placement="top"><img
+                      src="assets/img/icons/expressjs.png" alt=""></div>
+                  <div class="techno__item-icon" data-bs-toggle="tooltip" title=".Net" data-bs-placement="top"><img
+                      src="assets/img/icons/microsoft-net-icon.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="d-flex justify-content-center">
               <div class="techno__item col-12 col-sm-8">
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Laravel" data-bs-placement="top"><img
-                    src="assets/img/icons/laravel.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Codeigniter" data-bs-placement="top"><img
-                    src="assets/img/icons/codeigniter.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Python" data-bs-placement="top"><img
-                    src="assets/img/icons/python.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Nodejs" data-bs-placement="top"><img
-                    src="assets/img/icons/nodejs.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Php" data-bs-placement="top"><img
-                    src="assets/img/icons/php-icon.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="dJango" data-bs-placement="top"><img
-                    src="assets/img/icons/django.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Deno" data-bs-placement="top"><img
-                    src="assets/img/icons/deno.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Flask" data-bs-placement="top"><img
-                    src="assets/img/icons/flask.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Spring" data-bs-placement="top"><img
-                    src="assets/img/icons/spring-framework.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Expressjs" data-bs-placement="top"><img
-                    src="assets/img/icons/expressjs.png" alt=""></div>
-                <div class="techno__item-icon" data-bs-toggle="tooltip" title=".Net" data-bs-placement="top"><img
-                    src="assets/img/icons/microsoft-net-icon.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Iconic" data-bs-placement="top"><img
+                    src="assets/img/icons/ionic.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Swift" data-bs-placement="top"><img
+                    src="assets/img/icons/swift.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Android" data-bs-placement="top"><img
+                    src="assets/img/icons/android.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Kotlin" data-bs-placement="top"><img
+                    src="assets/img/icons/kotlin-icon.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="java" data-bs-placement="top"><img
+                    src="assets/img/icons/java.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="React Native" data-bs-placement="top">
+                  <img src="assets/img/icons/react-native.png" alt="">
+                </div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Dart" data-bs-placement="top"><img
+                    src="assets/img/icons/dart.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Flutter" data-bs-placement="top"><img
+                    src="assets/img/icons/flutter-icon.png" alt=""></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="iOS" data-bs-placement="top"><img
+                    src="assets/img/icons/icons8-ios-logo-90.png" alt=""></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-          <div class="d-flex justify-content-center">
-            <div class="techno__item col-12 col-sm-8">
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Iconic" data-bs-placement="top"><img
-                  src="assets/img/icons/ionic.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Swift" data-bs-placement="top"><img
-                  src="assets/img/icons/swift.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Android" data-bs-placement="top"><img
-                  src="assets/img/icons/android.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Kotlin" data-bs-placement="top"><img
-                  src="assets/img/icons/kotlin-icon.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="java" data-bs-placement="top"><img
-                  src="assets/img/icons/java.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="React Native" data-bs-placement="top"><img
-                  src="assets/img/icons/react-native.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Dart" data-bs-placement="top"><img
-                  src="assets/img/icons/dart.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Flutter" data-bs-placement="top"><img
-                  src="assets/img/icons/flutter-icon.png" alt=""></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="iOS" data-bs-placement="top"><img
-                  src="assets/img/icons/icons8-ios-logo-90.png" alt=""></div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="pills-database" role="tabpanel" aria-labelledby="pills-database-tab">
-          <div class="d-flex justify-content-center">
-            <div class="techno__item">
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="MongoDB" data-bs-placement="top"><img
-                  src="assets/img/icons/mongodb.png" alt="MongoDB"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Google Firebase" data-bs-placement="top">
-                <img src="assets/img/icons/google-firebase.png" alt="Google Firebase">
+          <div class="tab-pane fade" id="pills-database" role="tabpanel" aria-labelledby="pills-database-tab">
+            <div class="d-flex justify-content-center">
+              <div class="techno__item">
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="MongoDB" data-bs-placement="top"><img
+                    src="assets/img/icons/mongodb.png" alt="MongoDB"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Google Firebase" data-bs-placement="top">
+                  <img src="assets/img/icons/google-firebase.png" alt="Google Firebase">
+                </div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="PostgreSQL" data-bs-placement="top"><img
+                    src="assets/img/icons/postgresql.png" alt="PostgreSQL"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="SQL" data-bs-placement="top"><img
+                    src="assets/img/icons/sql-database-generic.png" alt="SQL"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Redis" data-bs-placement="top"><img
+                    src="assets/img/icons/redis-icon.png" alt="Redis"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="MySQL" data-bs-placement="top"><img
+                    src="assets/img/icons/mysql.png" alt="MySQL"></div>
               </div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="PostgreSQL" data-bs-placement="top"><img
-                  src="assets/img/icons/postgresql.png" alt="PostgreSQL"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="SQL" data-bs-placement="top"><img
-                  src="assets/img/icons/sql-database-generic.png" alt="SQL"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Redis" data-bs-placement="top"><img
-                  src="assets/img/icons/redis-icon.png" alt="Redis"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="MySQL" data-bs-placement="top"><img
-                  src="assets/img/icons/mysql.png" alt="MySQL"></div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="pills-servers" role="tabpanel" aria-labelledby="pills-servers-tab">
-          <div class="d-flex justify-content-center">
-            <div class="techno__item">
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="AWS" data-bs-placement="top"><img
-                  src="assets/img/icons/amazon-web-services-icon.png" alt="AWS"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Google Cloud" data-bs-placement="top"><img
-                  src="assets/img/icons/google-cloud-icon.png" alt="Google Cloud"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Heroku" data-bs-placement="top"><img
-                  src="assets/img/icons/heroku-icon.png" alt="Heroku"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Docker" data-bs-placement="top"><img
-                  src="assets/img/icons/docker-icon.png" alt="Docker"></div>
+          <div class="tab-pane fade" id="pills-servers" role="tabpanel" aria-labelledby="pills-servers-tab">
+            <div class="d-flex justify-content-center">
+              <div class="techno__item">
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="AWS" data-bs-placement="top"><img
+                    src="assets/img/icons/amazon-web-services-icon.png" alt="AWS"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Google Cloud" data-bs-placement="top">
+                  <img src="assets/img/icons/google-cloud-icon.png" alt="Google Cloud">
+                </div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Heroku" data-bs-placement="top"><img
+                    src="assets/img/icons/heroku-icon.png" alt="Heroku"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Docker" data-bs-placement="top"><img
+                    src="assets/img/icons/docker-icon.png" alt="Docker"></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="pills-others" role="tabpanel" aria-labelledby="pills-others-tab">
-          <div class="d-flex justify-content-center">
-            <div class="techno__item">
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Git" data-bs-placement="top"><img
-                  src="assets/img/icons/git-icon.png" alt="Git"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Github" data-bs-placement="top"><img
-                  src="assets/img/icons/github.png" alt="Github"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Jira" data-bs-placement="top"><img
-                  src="assets/img/icons/jira-icon.png" alt="Jira"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Azure" data-bs-placement="top"><img
-                  src="assets/img/icons/microsoft-azure-icon.png" alt="Azure"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Bitbucket" data-bs-placement="top"><img
-                  src="assets/img/icons/bitbucket.png" alt="Bitbucket"></div>
-              <div class="techno__item-icon" data-bs-toggle="tooltip" title="Slack" data-bs-placement="top"><img
-                  src="assets/img/icons/slack-icon.png" alt="Slack"></div>
+          <div class="tab-pane fade" id="pills-others" role="tabpanel" aria-labelledby="pills-others-tab">
+            <div class="d-flex justify-content-center">
+              <div class="techno__item">
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Git" data-bs-placement="top"><img
+                    src="assets/img/icons/git-icon.png" alt="Git"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Github" data-bs-placement="top"><img
+                    src="assets/img/icons/github.png" alt="Github"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Jira" data-bs-placement="top"><img
+                    src="assets/img/icons/jira-icon.png" alt="Jira"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Azure" data-bs-placement="top"><img
+                    src="assets/img/icons/microsoft-azure-icon.png" alt="Azure"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Bitbucket" data-bs-placement="top"><img
+                    src="assets/img/icons/bitbucket.png" alt="Bitbucket"></div>
+                <div class="techno__item-icon" data-bs-toggle="tooltip" title="Slack" data-bs-placement="top"><img
+                    src="assets/img/icons/slack-icon.png" alt="Slack"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -510,7 +524,7 @@
     <!-- =================================== -->
     <!-- ======= PORTFOLIO SECTION ======= -->
     <!-- =================================== -->
-    <section id="portfolio" class="portfolio" data-aos="fade-up">
+    <section id="portfolio" class="portfolio wrapper" data-aos="fade-up">
       <header class="section-header">
         <h2 class="section-title">Our Portfolio</h2>
       </header>
@@ -661,62 +675,64 @@
     <!-- =================================== -->
     <!-- ======= CONTACT US ======= -->
     <!-- =================================== -->
-    <section id="contact" class="section-bg">
-      <div class="contact__candidate">
-        <div class="contact__candidate--title">
-          <h2>We Are Hiring</h2>
-        </div>
-        <div class="contact__candidate--text">
-          <p>We're looking for driven, goal-oriented professionals that want to put in the time and effort to make a
-            difference and succeed.
-          </p>
-          <p>
-            Does this sound like you? Proceed to the next step.
-          </p>
-          <div>
-            <strong>
-              Send your resume or portfolio at
-            </strong>
-            <span><a href="mailto:hr@softrefine.com">hr@softrefine.com</a></span>
+    <section class="section-bg">
+      <div id="contact" class="wrapper">
+        <div class="contact__candidate">
+          <div class="contact__candidate--title">
+            <h2>We Are Hiring</h2>
           </div>
-          <div>
-            <strong>
-              For more information call us at
-            </strong>
-            <span><a href="callto:+915555588888">+91 90999 30601</a></span>
+          <div class="contact__candidate--text">
+            <p>We're looking for driven, goal-oriented professionals that want to put in the time and effort to make a
+              difference and succeed.
+            </p>
+            <p>
+              Does this sound like you? Proceed to the next step.
+            </p>
+            <div>
+              <strong>
+                Send your resume or portfolio at
+              </strong>
+              <span><a href="mailto:hr@softrefine.com">hr@softrefine.com</a></span>
+            </div>
+            <div>
+              <strong>
+                For more information call us at
+              </strong>
+              <span><a href="callto:+915555588888">+91 90999 30601</a></span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="contact__client">
-        <div class="contact__client--title">
-          <h2>Contact Us</h2>
-          <div class="contact__client--text">
-            <p>We welcome any recommendations or simply a conversation.</p>
-            <div class="contact">
-              <div class="contact__icon">
-                <i class="bi bi-telephone-outbound"></i>
+        <div class="contact__client">
+          <div class="contact__client--title">
+            <h2>Contact Us</h2>
+            <div class="contact__client--text">
+              <p>We welcome any recommendations or simply a conversation.</p>
+              <div class="contact">
+                <div class="contact__icon">
+                  <i class="bi bi-telephone-outbound"></i>
+                </div>
+                <div class="contact__text">
+                  <strong>Phone:</strong>
+                  <span>+91 84696 12500</span>
+                </div>
               </div>
-              <div class="contact__text">
-                <strong>Phone:</strong>
-                <span>+91 84696 12500</span>
+              <div class="contact">
+                <div class="contact__icon">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="contact__text">
+                  <strong>Email:</strong>
+                  <span><a href="mailto:sale@softrefine.com">sales@softrefine.com</a></span>
+                </div>
               </div>
-            </div>
-            <div class="contact">
-              <div class="contact__icon">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div class="contact__text">
-                <strong>Email:</strong>
-                <span><a href="mailto:sale@softrefine.com">sales@softrefine.com</a></span>
-              </div>
-            </div>
-            <div class="contact">
-              <div class="contact__icon">
-                <i class="bi bi-clock"></i>
-              </div>
-              <div class="contact__text">
-                <strong>Time:</strong>
-                <span>10 A.M. - 7 P.M.</span>
+              <div class="contact">
+                <div class="contact__icon">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="contact__text">
+                  <strong>Time:</strong>
+                  <span>10 A.M. - 7 P.M.</span>
+                </div>
               </div>
             </div>
           </div>
@@ -727,7 +743,7 @@
 
   <!-- ======= FOOTER ======= -->
   <footer id="footer">
-    <div class="footer">
+    <div class="footer wrapper">
       <div class="footer__logo" data-aos="fade-up" data-aos-delay="300">
         <div class="footer__logo--img">
           <img src="./assets/img/softrefine/SoftrfineLog.png" alt="">

@@ -19,6 +19,12 @@ SPACING (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 html {
   font-size: 62.5%;
 }
+@media (min-width: 90em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   background: #fff;
   color: #111;
@@ -54,6 +60,10 @@ h6 {
   font-weight: 400;
   margin: 0 0 2.4rem 0;
   padding: 0;
+}
+.wrapper {
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 /*--------------------------------------------------------------
@@ -118,6 +128,7 @@ h6 {
 }
 #header.header-scrolled {
   background: #fff;
+  /* width: 100vw; */
   height: 8rem;
   box-shadow: 0 0 3rem rgba(127, 137, 161, 0.3);
 }
@@ -322,7 +333,8 @@ h6 {
 # HERO SECTION
 --------------------------------------------------------------*/
 #hero {
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: 100vw;
   height: 100vh;
   position: relative;
   background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
@@ -332,6 +344,11 @@ h6 {
   align-items: center;
   gap: 2.4rem;
   padding: 8rem 4.8rem;
+}
+@media (min-width: 90em) {
+  #hero {
+    background: none;
+  }
 }
 #hero .hero__img {
   flex-basis: 50%;
@@ -473,6 +490,7 @@ section {
 #about .about__container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2.4rem;
 }
 #about .about-img {
@@ -515,7 +533,8 @@ section {
 #about .about-text {
   flex-basis: 50%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 80%;
 }
 #about .about-text h2 {
   color: var(--color-primary);
@@ -698,6 +717,7 @@ CLIENTS SECTION
 .why-us__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 2.4rem;
   position: relative;
 }
@@ -712,7 +732,9 @@ CLIENTS SECTION
   object-fit: cover;
 }
 .why-us-content {
-  flex-basis: 50%;
+  flex-basis: 40%;
+  /* width: 80%;
+  margin: 0 auto; */
 }
 /* #why-us {
   padding: 8rem 4.8rem;
