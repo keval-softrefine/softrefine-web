@@ -26,8 +26,8 @@
 
 <body>
   <!-- ======= Header ======= -->
-  
-  <header id="header" class="fixed-top header-transparent wrapper">
+
+  <!-- <header id="header" class="fixed-top header-transparent wrapper">
     <div class="header">
       <div class="header__logo">
         <a href="#">
@@ -46,7 +46,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
-      <!-- MOBILE NAVIGATION -->
+      
       <nav id="mobile-navbar" class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./assets/img/softrefine/SoftrfineLog.png" alt="softrefine"></a>
@@ -87,14 +87,32 @@
         </div>
       </nav>
     </div>
+  </header> -->
+
+  <header id="header">
+    <div class="header wrapper">
+      <div class="header__logo"><a href="#"><img src="./assets/img/softrefine/SoftrfineLog.png" alt="softrefine"></a>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#why-us">Features</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#form">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
   </header>
 
   <!-- ============================= -->
   <!-- ======= HERO SECTION ======= -->
   <!-- ============================= -->
-  <section class="clearfix">
-    <div class="wrapper">
-      <div id="hero" class="hero">
+  <!-- <section class="clearfix">
+    <div class="">
+      <div id="hero" class="hero wrapper">
         <div class="hero__content" data-aos="zoom-in" data-aos-delay="100">
           <h2 class="hero__content--heading">Where Ideas Meet <span>Destination!</span></h2>
           <p class="hero__content--text">
@@ -110,6 +128,25 @@
         <div class="hero__img" data-aos="zoom-out" data-aos-delay="100">
           <img src="assets/img/hero-img.svg" alt="illustration">
         </div>
+      </div>
+    </div>
+  </section> -->
+  <section id="hero" class="wrapper">
+    <div class="hero">
+      <div class="hero__content" data-aos="zoom-in" data-aos-delay="100">
+        <h2 class="hero__content--heading">Where Ideas Meet <span>Destination!</span></h2>
+        <p class="hero__content--text">
+          Softrefine is a leading technological service provider that uses cutting-edge technology to help you grow
+          your
+          business. Our extensive knowledge and experience enable us to advise you on what is feasible, practical, and
+          cost-effective.
+        </p>
+        <div>
+          <a href="#about" class="hero__content--btn">Get Started</a>
+        </div>
+      </div>
+      <div class="hero__img" data-aos="zoom-out" data-aos-delay="100">
+        <img src="assets/img/hero-img.svg" alt="illustration">
       </div>
     </div>
   </section>
@@ -290,7 +327,7 @@
       <div class="counters" data-aos="fade-up" data-aos-delay="100">
         <div class="text-center counter">
           <div class="d-flex justify-content-center">
-            <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1"
+            <span data-purecounter-start="0" data-purecounter-end="400" data-purecounter-duration="1"
               class="purecounter"></span>
             <span class="mx-2">+</span>
           </div>
@@ -302,11 +339,11 @@
               class="purecounter"></span>
             <span class="mx-2">+</span>
           </div>
-          <p>Technologies We Serve</p>
+          <p>Technologies We Work with</p>
         </div>
         <div class="text-center counter">
           <div class="d-flex justify-content-center">
-            <span data-purecounter-start="0" data-purecounter-end="140" data-purecounter-duration="1"
+            <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1"
               class="purecounter"></span>
             <span class="mx-2">+</span>
           </div>
@@ -314,11 +351,11 @@
         </div>
         <div class="text-center counter">
           <div class="d-flex justify-content-center">
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+            <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1"
               class="purecounter"></span>
             <span class="mx-2">+</span>
           </div>
-          <p>Countries We Work For</p>
+          <p>Countries We Serve For</p>
         </div>
       </div>
     </section>
@@ -521,170 +558,170 @@
       </div>
     </section>
 
-    <!-- =================================== -->
+
+   <!-- =================================== -->
     <!-- ======= PORTFOLIO SECTION ======= -->
     <!-- =================================== -->
-    <section id="portfolio" class="portfolio wrapper" data-aos="fade-up">
-      <header class="section-header">
-        <h2 class="section-title">Our Portfolio</h2>
-      </header>
-      <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-12">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
-        </div>
+ <section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h2 class="section-title">Our Portfolio</h2>
+    </header>
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-12">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
       </div>
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-lg-2 col-md-2 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/app2 intro.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Jojo Pipi</h4>
-              <p>App</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/app2.jpg" data-gallery="portfolioGallery" title="Jojo Pipi"
-                  class="link-preview portfolio-lightbox"><i class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/card3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Titan</h4>
-              <p>Web</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/card3.jpg" class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery" title="Titan"><i class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/laundry intro.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>My Laundry</h4>
-              <p>App</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/laundry.jpg" class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery" title="My Laundry"><i class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/aap3 intro.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>ShareMeUp by Link</h4>
-              <p>App</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/app3.jpg" class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery" title="ShareMeUp by Link"><i class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/New folder/100bet.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>100bet</h4>
-                <p>Web</p>
-                <div>
-                  <a href="assets/img/portfolio/New folder/100bet.jpg" class="link-preview portfolio-lightbox"
-                    data-gallery="portfolioGallery" title="100bet"><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/align.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Align</h4>
-              <p>Web</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/align.jpg" class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery" title="Align HR Management Portal"><i class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/app1 intro.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>SC Mobile Singapore</h4>
-              <p>App</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/app1.jpg" class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery" title="SC Mobile Singapore"><i class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/titan intro.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Titan Mobile App</h4>
-              <p>App</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/tital mobile.jpg" class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery" title="Titan Mobile App"><i class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/card1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Construcshare</h4>
-              <p>Web</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/card1.jpg" class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery" title="Construcshare"><i class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/prospect.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Prospect</h4>
-              <p>Web</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/prospect.png" class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery" title="Prospect"><i class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/New folder/Looping intro.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Looping - Family calendar</h4>
-              <p>App</p>
-              <div>
-                <a href="assets/img/portfolio/New folder/Looping.jpg" class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery" title="Looping - Family calendar"><i class="bi bi-plus"></i></a>
-              </div>
+    </div>
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-lg-2 col-md-2 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/app2 intro.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Jojo Pipi</h4>
+            <p>App</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/app2.jpg" data-gallery="portfolioGallery" title="Jojo Pipi"
+                class="link-preview portfolio-lightbox"><i class="bi bi-plus"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/card3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Titan</h4>
+            <p>Web</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/card3.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="Titan"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/laundry intro.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>My Laundry</h4>
+            <p>App</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/laundry.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="My Laundry"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/aap3 intro.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>ShareMeUp by Link</h4>
+            <p>App</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/app3.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="ShareMeUp by Link"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/100bet.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>100bet</h4>
+            <p>Web</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/100bet.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="100bet"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/align.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Align</h4>
+            <p>Web</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/align.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="Align HR Management Portal"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/app1 intro.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>SC Mobile Singapore</h4>
+            <p>App</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/app1.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="SC Mobile Singapore"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/titan intro.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Titan Mobile App</h4>
+            <p>App</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/tital mobile.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="Titan Mobile App"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/card1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Construcshare</h4>
+            <p>Web</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/card1.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="Construcshare"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/prospect.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Prospect</h4>
+            <p>Web</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/prospect.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="Prospect"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 portfolio-item filter-app" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/New folder/Looping intro.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Looping - Family calendar</h4>
+            <p>App</p>
+            <div>
+              <a href="assets/img/portfolio/New folder/Looping.jpg" class="link-preview portfolio-lightbox"
+                data-gallery="portfolioGallery" title="Looping - Family calendar"><i class="bi bi-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+ </section>
     <!-- =================================== -->
     <!-- ======= CONTACT US ======= -->
     <!-- =================================== -->
@@ -725,7 +762,7 @@
                   <i class="bi bi-telephone-outbound"></i>
                 </div>
                 <div class="contact__text">
-                  <strong>Phone:</strong>
+                  <!-- <strong>Phone:</strong> -->
                   <span>+91 84696 12500</span>
                 </div>
               </div>
@@ -734,7 +771,7 @@
                   <i class="bi bi-envelope"></i>
                 </div>
                 <div class="contact__text">
-                  <strong>Email:</strong>
+                  <!-- <strong>Email:</strong> -->
                   <span><a href="mailto:sale@softrefine.com">sales@softrefine.com</a></span>
                 </div>
               </div>
@@ -743,7 +780,7 @@
                   <i class="bi bi-clock"></i>
                 </div>
                 <div class="contact__text">
-                  <strong>Time:</strong>
+                  <!-- <strong>Time:</strong> -->
                   <span>10 A.M. - 7 P.M.</span>
                 </div>
               </div>
