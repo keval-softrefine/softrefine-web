@@ -839,9 +839,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# HERO SECTION
---------------------------------------------------------------*/
 #hero {
   background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
   background-size: cover;
@@ -893,20 +890,6 @@ section {
   color: var(--color-secondary);
 }
 
-@media (max-width: 74.1875em) {
-  #hero .hero .hero__content .hero__content--heading,
-  #hero .hero .hero__content .hero__content--heading span {
-    font-size: 4.8rem;
-  }
-}
-
-@media (max-width: 60.31em) {
-  #hero .hero .hero__content .hero__content--heading,
-  #hero .hero .hero__content .hero__content--heading span {
-    font-size: 3.6rem;
-  }
-}
-
 #hero .hero .hero__content .hero__content--text {
   font-size: 1.6rem;
   max-width: 75ch;
@@ -930,6 +913,20 @@ section {
 
 #hero .hero .hero__content .hero__content--btn:hover {
   background: var(--color-secondary);
+}
+
+@media (max-width: 74.1875em) {
+  #hero .hero .hero__content .hero__content--heading,
+  #hero .hero .hero__content .hero__content--heading span {
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 60.31em) {
+  #hero .hero .hero__content .hero__content--heading,
+  #hero .hero .hero__content .hero__content--heading span {
+    font-size: 3.6rem;
+  }
 }
 
 @media (max-width: 47.625em) {
@@ -1082,41 +1079,6 @@ section {
   margin: 1.5rem;
 }
 
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 1rem 2rem;
-  padding: 1rem 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  -webkit-box-shadow: 0 0 3rem rgba(127, 137, 161, 0.25);
-          box-shadow: 0 0 3rem rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul li {
-  min-width: 20rem;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 1rem 2rem;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 1.2rem;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
-  color: var(--color-secondary);
-}
-
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
-}
-
 .navbar-toggler-icon {
   border: none;
 }
@@ -1185,9 +1147,6 @@ section {
   }
 }
 
-/* ----------------------------
- PORTFOLIO SECTION
---------------------------------*/
 #portfolio {
   padding: 8rem 4.8rem;
 }
@@ -1530,9 +1489,6 @@ i {
   }
 }
 
-/* ------------------------
- STATASTICS
------------------------ */
 #stats {
   padding: 8rem 4.8rem;
 }
@@ -1603,9 +1559,6 @@ i {
   }
 }
 
-/* -----------------------------
- TECHNOLOGY SECTION
---------------------------------*/
 .technology-section {
   padding: 8rem 0;
   font-size: 1.8rem;
