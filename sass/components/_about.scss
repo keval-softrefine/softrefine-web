@@ -85,12 +85,16 @@
   #about .about__container {
     flex-direction: column;
   }
-  #about .container .about__container .about-img {
+  #about .container .about__container .about-img,
+  #about .container .about__container .about-img img {
     width: 100%;
   }
   #about .hero__content {
     order: 2;
     padding-bottom: 4.8rem;
+  }
+  #about .about-text {
+    width: 100%;
   }
 }
 

@@ -307,7 +307,8 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #about .container .about__container .about-img {
+  #about .container .about__container .about-img,
+  #about .container .about__container .about-img img {
     width: 100%;
   }
   #about .hero__content {
@@ -315,6 +316,9 @@ section {
         -ms-flex-order: 2;
             order: 2;
     padding-bottom: 4.8rem;
+  }
+  #about .about-text {
+    width: 100%;
   }
 }
 
@@ -366,7 +370,7 @@ section {
 }
 
 #clients {
-  padding: 6rem 4.8rem;
+  padding: 8rem 4.8rem;
 }
 
 #clients .section-header h3 {
@@ -410,11 +414,11 @@ section {
 
 @media (max-width: 26.56em) {
   #clients {
-    padding: 4rem 3.6rem;
+    padding: 6rem 3.6rem;
   }
 }
 
-#contact {
+#contact .wrapper {
   padding: 8rem 4.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,7 +537,7 @@ section {
 }
 
 @media (max-width: 44.25em) {
-  #contact {
+  #contact .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -542,7 +546,7 @@ section {
 }
 
 @media (max-width: 26.54em) {
-  #contact {
+  #contact .wrapper {
     padding: 4rem 3.6rem;
   }
 }
@@ -1765,7 +1769,6 @@ i {
   .why-us-content {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    padding: 0 4.8rem;
   }
   .why-us-img {
     -ms-flex-preferred-size: 100%;
@@ -1779,7 +1782,7 @@ i {
 
 @media (max-width: 26.54em) {
   .why-us-content {
-    padding: 0 3.6rem;
+    padding: 0 1rem;
     padding-bottom: 6rem;
   }
 }

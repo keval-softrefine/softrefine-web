@@ -1,4 +1,4 @@
-#contact {
+#contact .wrapper {
   padding: 8rem 4.8rem;
   display: flex;
   align-items: flex-start;
@@ -87,12 +87,12 @@
   margin-left: 0.5rem;
 }
 @media (max-width: 44.25em) {
-  #contact {
+  #contact .wrapper {
     flex-direction: column;
   }
 }
 @media (max-width: 26.54em) {
-  #contact {
+  #contact .wrapper {
     padding: 4rem 3.6rem;
   }
 }
