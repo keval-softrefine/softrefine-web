@@ -445,7 +445,7 @@ h6 {
   }
 }
 @media (max-width: 47.625em) {
-  #hero {
+  #hero .hero {
     height: auto;
     flex-direction: column;
   }
