@@ -660,7 +660,7 @@ section {
 
 #header.header-scrolled {
   background: #fff;
-  height: 8rem;
+  height: 7rem;
   box-shadow: 0 0 3rem rgba(127, 137, 161, 0.3);
 }
 
@@ -818,6 +818,7 @@ section {
   display: flex;
   list-style: none;
   align-items: center;
+  margin-top: -7rem;
 }
 
 .navbar li {
@@ -966,6 +967,7 @@ section {
   }
   .offcanvas-body .navbar-nav .nav-item .nav-link {
     color: #111;
+    font-size: 2rem;
   }
   .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
     color: #eee;
@@ -973,6 +975,15 @@ section {
     margin: 0 auto;
     transition: all 0.5 ease-in-out;
   }
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
 }
 
 #portfolio {

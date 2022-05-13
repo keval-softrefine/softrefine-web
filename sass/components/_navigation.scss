@@ -13,6 +13,7 @@
   display: flex;
   list-style: none;
   align-items: center;
+  margin-top: -7rem;
 }
 .navbar li {
   position: relative;
@@ -148,6 +149,7 @@
   }
   .offcanvas-body .navbar-nav .nav-item .nav-link {
     color: #111;
+    font-size: 2rem;
   }
   .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
     color: #eee;
@@ -156,3 +158,10 @@
     transition: all 0.5 ease-in-out;
   }
 }
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+} 
