@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 48em) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# HEADER 
+--------------------------------------------------------------*/
+
+#header {
+  transition: all 0.5s;
+  z-index: 999;
+  height: 7rem;
+  margin-bottom: 4rem;
+  padding: 0 4.8rem;
+}
+#header .header {
+  margin: 0;
+  padding: 1rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header.header-transparent {
+  background: transparent;
+}
+#header.header-scrolled {
+  background: #fff;
+  height: 8rem;
+  box-shadow: 0 0 3rem rgba(127, 137, 161, 0.3);
+}
+#header .header .header__logo {
+  width: fit-content;
+  height: auto;
+}
+#header .header .header__logo a img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+#header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#header .header .header__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+#header .header .header__nav ul li a:link,
+#header .header .header__nav ul li a:visited {
+  color: var(--color-primary);
+}
+#header .header .header__nav ul li a:hover,
+#header .header .header__nav ul li a:active {
+  color: var(--color-secondary);
+}
+@media (max-width: 26.5625em) {
+  .header__logo {
+    display: none;
+  }
+}

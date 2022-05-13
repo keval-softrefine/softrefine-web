@@ -1,0 +1,144 @@
+/*--------------------------------------------------------------
+#  CONTACT US SECTION
+--------------------------------------------------------------*/
+#form {
+  padding: 6rem 2rem;
+  font-size: 1.4rem;
+}
+#form .section-header h3 {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+#form .section-title {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 3.6rem;
+  text-align: left;
+  margin-bottom: 2.4rem;
+}
+#form .hire__section p,
+#form .hire__section div,
+#form .hire__section a {
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+#form .hire__section a {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+#form .hire__section a {
+  color: var(--color-secondary);
+}
+@media (max-width: 26.56em) {
+  #form .section-title {
+    font-size: 3rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# CONTACT
+--------------------------------------------------------------*/
+
+#contact {
+  padding: 8rem 4.8rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+  justify-content: space-between;
+}
+#contact .contact__candidate {
+  flex-basis: 45%;
+}
+#contact .contact__candidate .contact__candidate--title h2 {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+}
+#contact .contact__candidate .contact__candidate--text p,
+#contact .contact__candidate .contact__candidate--text div strong {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+#contact .contact__candidate .contact__candidate--text div span a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-left: 0.5rem;
+}
+#contact .contact__client {
+  flex-basis: 45%;
+}
+#contact .contact__client .contact__client--title h2 {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+}
+#contact .contact__client .contact__client--text div i {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+#contact .contact__client .contact__client--text .contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+#contact .contact__client .contact__client--text div .icon {
+  display: inline-block;
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+#contact .contact__client .contact__client--text p,
+#contact .contact__client .contact__client--text div strong {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+#contact .contact__client .contact__client--text .contact {
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+#contact .contact__client .contact__client--text .contact .contact__icon {
+  position: relative;
+  background-color: rgba(29, 29, 87, 0.1);
+
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+}
+#contact .contact__client .contact__client--text .contact .contact__icon i {
+  position: absolute;
+  top: 50%;
+  color: var(--color-primary);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contact .contact__client .contact__client--text div span,
+#contact .contact__client .contact__client--text div span a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  /* color: #222; */
+  color: var(--color-secondary);
+  margin-left: 0.5rem;
+}
+@media (max-width: 44.25em) {
+  #contact {
+    flex-direction: column;
+  }
+}
+@media (max-width: 26.54em) {
+  #contact {
+    padding: 4rem 3.6rem;
+  }
+}

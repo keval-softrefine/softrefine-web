@@ -1,0 +1,53 @@
+/* ------------------------
+ STATASTICS
+----------------------- */
+#stats {
+  padding: 8rem 4.8rem;
+}
+#stats .section-header h3 {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+#stats .counters {
+  padding-top: 2rem;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+#stats .counters .counter {
+  flex-basis: 25%;
+}
+#stats .counters span {
+  font-weight: bold;
+  font-size: 4.8rem;
+  display: block;
+  color: var(--color-primary);
+}
+#stats .counters p {
+  padding: 0;
+  margin: 0 0 2rem 0;
+  font-size: 1.6rem;
+  color: var(--color-primary);
+}
+@media (max-width: 52.375em) {
+  #stats .counters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (max-width: 28.5em) {
+  #stats .counters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media (max-width: 26.56em) {
+  #stats {
+    padding: 4rem 3.6rem;
+  }
+}

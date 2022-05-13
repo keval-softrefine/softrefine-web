@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# BACK TO TOP BUTTON
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 1.6rem;
+  bottom: 1.6rem;
+  z-index: 999;
+  background: var(--color-primary);
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.back-to-top i {
+  font-size: 3rem;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: var(--color-secondary);
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}

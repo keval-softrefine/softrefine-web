@@ -1,0 +1,95 @@
+/*-------------------------------------------------------------- # FOOTER --------------------------------------------------------------*/
+#footer {
+  padding: 6rem 4.8rem;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.4rem;
+}
+.footer .footer__logo .footer__logo--img {
+  margin-bottom: 1.4rem;
+}
+.footer .footer__logo .footer__logo--img img {
+  width: max-content;
+}
+.footer .footer__logo .footer__logo--text {
+  color: #222;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+.footer .footer__addresses .addresses {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+.footer .footer__addresses .addresses .address {
+  flex-basis: 100%;
+}
+.footer .footer__addresses .addresses .address h4 {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--color-primary);
+  /* margin-bottom: 0.8rem; */
+}
+.footer .footer__addresses .addresses .address p {
+  color: #222;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 75em) {
+  .footer {
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+  .footer .footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+  }
+  .footer .footer__logo .footer__logo--img,
+  .footer .footer__logo .footer__logo--text {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 35.95em) {
+  #footer {
+    padding: 2rem 3.6rem;
+  }
+  .footer .footer__logo {
+    flex-direction: column;
+  }
+  .footer .footer__addresses .addresses {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer .footer__addresses .addresses .address h4 {
+    margin-bottom: 0.4rem;
+  }
+}
+@media (max-width: 26.56em) {
+  #footer {
+    padding: 4rem 3.6rem;
+  }
+}

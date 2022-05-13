@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------
+# HERO SECTION
+--------------------------------------------------------------*/
+#hero {
+  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  background-size: cover;
+  /* width: 100vw; */
+}
+#hero .hero {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 8rem 4.8rem;
+
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+#hero .hero .hero__img {
+  flex-basis: 50%;
+}
+#hero .hero .hero__img img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  animation: up-down 12s ease infinite;
+}
+#hero .hero .hero__content {
+  flex-basis: 50%;
+}
+#hero .hero .hero__content .hero__content--heading {
+  color: var(--color-primary);
+  margin-bottom: 4rem;
+  font-size: 6rem;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: -0.2rem;
+}
+#hero .hero .hero__content .hero__content--heading span {
+  color: var(--color-secondary);
+}
+@media (max-width: 74.1875em) {
+  #hero .hero .hero__content .hero__content--heading,
+  #hero .hero .hero__content .hero__content--heading span {
+    font-size: 4.8rem;
+  }
+}
+@media (max-width: 60.31em) {
+  #hero .hero .hero__content .hero__content--heading,
+  #hero .hero .hero__content .hero__content--heading span {
+    font-size: 3.6rem;
+  }
+}
+#hero .hero .hero__content .hero__content--text {
+  font-size: 1.6rem;
+  max-width: 75ch;
+  line-height: 1.6;
+}
+#hero .hero .hero__content .hero__content--btn {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  padding: 1rem 3.2rem;
+  border-radius: 0.4rem;
+  transition: 0.5s;
+  color: #fff;
+  background: var(--color-primary);
+}
+#hero .hero .hero__content .hero__content--btn:hover {
+  background: var(--color-secondary);
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(3rem);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(3rem);
+  }
+}
+@media (max-width: 47.625em) {
+  #hero .hero {
+    height: auto;
+    flex-direction: column;
+  }
+  #hero .hero__img {
+    width: 100%;
+  }
+  #hero .hero__content {
+    order: 2;
+    padding-bottom: 4.8rem;
+  }
+}
+/* @media (max-width: 26.5625em) {
+  #hero {
+    padding: 8rem 3.6rem;
+  }
+} */
