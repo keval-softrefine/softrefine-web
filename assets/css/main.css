@@ -124,8 +124,74 @@ section {
   }
 }
 
-/* ABOUT US SECTION
---------------------------------*/
+@-webkit-keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  25% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  75% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  25% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  75% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+}
+
 #about {
   padding: 8rem 4.8rem;
 }
@@ -199,8 +265,8 @@ section {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding: 0;
+  width: 80%;
   margin: 0 auto;
-  /* width: 80%; */
 }
 
 #about .about-text h2 {
@@ -228,12 +294,27 @@ section {
   }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 47.625em) {
+  #about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   #about .about__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #about .container .about__container .about-img {
+    width: 100%;
+  }
+  #about .hero__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-bottom: 4.8rem;
   }
 }
 
@@ -254,32 +335,6 @@ section {
   }
 }
 
-@media (max-width: 47.625em) {
-  #about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #about .container .about__container .about-img {
-    width: 100%;
-  }
-  #about .hero__content {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    padding-bottom: 4.8rem;
-  }
-}
-
-/* @media (max-width: 26.5625em) {
-  #about {
-    padding: 8rem 3.6rem;
-  }
-} */
-/*--------------------------------------------------------------
-# BACK TO TOP BUTTON
---------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -310,9 +365,6 @@ section {
   opacity: 1;
 }
 
-/* ------------------------------- 
-CLIENTS SECTION
---------------------------------*/
 #clients {
   padding: 6rem 4.8rem;
 }
@@ -362,56 +414,6 @@ CLIENTS SECTION
   }
 }
 
-/*--------------------------------------------------------------
-#  CONTACT US SECTION
---------------------------------------------------------------*/
-#form {
-  padding: 6rem 2rem;
-  font-size: 1.4rem;
-}
-
-#form .section-header h3 {
-  color: var(--color-primary);
-  font-weight: 700;
-  font-size: 3.6rem;
-  text-align: center;
-  margin-bottom: 2.4rem;
-}
-
-#form .section-title {
-  color: var(--color-primary);
-  font-weight: 700;
-  font-size: 3.6rem;
-  text-align: left;
-  margin-bottom: 2.4rem;
-}
-
-#form .hire__section p,
-#form .hire__section div,
-#form .hire__section a {
-  font-size: 1.6rem;
-  text-align: left;
-  margin-bottom: 1.2rem;
-}
-
-#form .hire__section a {
-  display: block;
-  margin-bottom: 0.6rem;
-}
-
-#form .hire__section a {
-  color: var(--color-secondary);
-}
-
-@media (max-width: 26.56em) {
-  #form .section-title {
-    font-size: 3rem;
-  }
-}
-
-/*--------------------------------------------------------------
-# CONTACT
---------------------------------------------------------------*/
 #contact {
   padding: 8rem 4.8rem;
   display: -webkit-box;
@@ -526,7 +528,6 @@ CLIENTS SECTION
 #contact .contact__client .contact__client--text div span a {
   font-size: 1.6rem;
   font-weight: 500;
-  /* color: #222; */
   color: var(--color-secondary);
   margin-left: 0.5rem;
 }
@@ -546,9 +547,6 @@ CLIENTS SECTION
   }
 }
 
-/* ------------------
-COPYRIGHT SECTION
--------------------- */
 #copyright .copyright {
   text-align: center;
   padding: 3rem 0;
@@ -560,9 +558,6 @@ COPYRIGHT SECTION
   width: 3.2rem;
 }
 
-/* -----------------------------
- CTA SECTION
---------------------------------*/
 #cta {
   background: var(--color-primary);
 }
@@ -624,7 +619,6 @@ COPYRIGHT SECTION
   }
 }
 
-/*-------------------------------------------------------------- # FOOTER --------------------------------------------------------------*/
 #footer {
   padding: 6rem 4.8rem;
 }
@@ -679,7 +673,6 @@ COPYRIGHT SECTION
   letter-spacing: 1px;
   font-weight: 700;
   color: var(--color-primary);
-  /* margin-bottom: 0.8rem; */
 }
 
 .footer .footer__addresses .addresses .address p {
@@ -687,28 +680,6 @@ COPYRIGHT SECTION
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.8;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 @media (max-width: 75em) {
@@ -874,7 +845,6 @@ COPYRIGHT SECTION
 #hero {
   background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
   background-size: cover;
-  /* width: 100vw; */
 }
 
 #hero .hero {
@@ -962,52 +932,6 @@ COPYRIGHT SECTION
   background: var(--color-secondary);
 }
 
-@-webkit-keyframes up-down {
-  0% {
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  25% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  75% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-}
-
-@keyframes up-down {
-  0% {
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  25% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  75% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-}
-
 @media (max-width: 47.625em) {
   #hero .hero {
     height: auto;
@@ -1027,11 +951,6 @@ COPYRIGHT SECTION
   }
 }
 
-/* @media (max-width: 26.5625em) {
-  #hero {
-    padding: 8rem 3.6rem;
-  }
-} */
 /*--------------------------------------------------------------
 # NAVIGATION MENU
 --------------------------------------------------------------*/
@@ -1204,7 +1123,6 @@ COPYRIGHT SECTION
 
 #mobile-navbar {
   display: none;
-  /* margin-left: 1rem; */
 }
 
 @media (max-width: 62em) {
@@ -1442,12 +1360,6 @@ i {
   opacity: 1;
 }
 
-/* @media screen and (max-width: 600px) {
-  #portfolio .portfolio-item .portfolio-wrap {
-    display: flex;
-    justify-content: center;
-  }
-} */
 @media (max-width: 26.56em) {
   #portfolio {
     padding: 4rem 3.6rem;
@@ -1819,15 +1731,10 @@ i {
 .why-us-content {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  /* width: 80%;
-  margin: 0 auto; */
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* #why-us {
-  padding: 8rem 4.8rem;
-  padding-left: 0;
-  background-color: #f5f8fd;
-} */
 #why-us .section-header h3 {
   color: var(--color-primary);
   font-weight: 700;

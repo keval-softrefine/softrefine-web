@@ -1,4 +1,3 @@
-/*-------------------------------------------------------------- # FOOTER --------------------------------------------------------------*/
 #footer {
   padding: 6rem 4.8rem;
 }
@@ -33,7 +32,6 @@
   letter-spacing: 1px;
   font-weight: 700;
   color: var(--color-primary);
-  /* margin-bottom: 0.8rem; */
 }
 .footer .footer__addresses .addresses .address p {
   color: #222;
@@ -41,22 +39,7 @@
   font-weight: 500;
   line-height: 1.8;
 }
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 @media (max-width: 75em) {
   .footer {
     flex-direction: column;

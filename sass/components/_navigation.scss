@@ -101,41 +101,13 @@
 .navbar-mobile .getstarted:focus {
   margin: 1.5rem;
 }
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 1rem 2rem;
-  padding: 1rem 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0 0 3rem rgba(127, 137, 161, 0.25);
-}
-.navbar-mobile .dropdown ul li {
-  min-width: 20rem;
-}
-.navbar-mobile .dropdown ul a {
-  padding: 1rem 2rem;
-}
-.navbar-mobile .dropdown ul a i {
-  font-size: 1.2rem;
-}
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
-  color: var(--color-secondary);
-}
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
-}
 .navbar-toggler-icon {
   border: none;
 }
 #mobile-navbar {
   display: none;
-  /* margin-left: 1rem; */
 }
+
 @media (max-width: 62em) {
   #navbar {
     display: none;

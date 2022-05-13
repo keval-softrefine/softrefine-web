@@ -1,6 +1,4 @@
-/* ----------------------------
- PORTFOLIO SECTION
---------------------------------*/
+
 #portfolio {
   padding: 8rem 4.8rem;
 }
@@ -134,12 +132,6 @@
 #portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
-/* @media screen and (max-width: 600px) {
-  #portfolio .portfolio-item .portfolio-wrap {
-    display: flex;
-    justify-content: center;
-  }
-} */
 @media (max-width: 26.56em) {
   #portfolio {
     padding: 4rem 3.6rem;
