@@ -479,7 +479,7 @@ section {
   text-align: center;
   padding: 3rem 0;
   color: var(--color-primary);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .hybrid-icon img {
@@ -1277,11 +1277,11 @@ i {
   margin-bottom: 1.5rem;
 }
 
-#services .title a {
+#services .title {
   color: var(--color-primary);
 }
 
-#services .box:hover .title a {
+#services .box:hover .title {
   color: var(--color-primary);
 }
 
