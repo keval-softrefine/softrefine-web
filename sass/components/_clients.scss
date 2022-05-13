@@ -38,3 +38,13 @@
     padding: 6rem 3.6rem;
   }
 }
+.big-logo {
+  @media screen and (max-width: 375px){
+    width: 60px;
+  }
+}
+.small-logo {
+  @media (max-width: 375px) {
+    width: 110px;
+  }
+}

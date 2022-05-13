@@ -43,7 +43,9 @@
   margin-bottom: 3rem;
 }
 #portfolio .portfolio-item .portfolio-wrap {
+  display: flex;
   overflow: hidden;
+  justify-content: center;
   position: relative;
   margin: 0;
 }
