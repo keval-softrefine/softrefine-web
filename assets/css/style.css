@@ -19,9 +19,19 @@ SPACING (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 html {
   font-size: 62.5%;
 }
+@media (min-width: 140em) {
+  html {
+    font-size: 87.5%;
+  }
+}
 @media (min-width: 90em) {
   html {
     font-size: 75%;
+  }
+}
+@media (max-width: 26.5625em) {
+  html {
+    font-size: 50%;
   }
 }
 
@@ -107,13 +117,13 @@ h6 {
 /*--------------------------------------------------------------
 # HEADER 
 --------------------------------------------------------------*/
+
 #header {
-  background: #fff;
   transition: all 0.5s;
   z-index: 999;
   height: 7rem;
-  padding: 0 4.8rem;
   margin-bottom: 4rem;
+  padding: 0 4.8rem;
 }
 #header .header {
   margin: 0;
@@ -128,7 +138,6 @@ h6 {
 }
 #header.header-scrolled {
   background: #fff;
-  /* width: 100vw; */
   height: 8rem;
   box-shadow: 0 0 3rem rgba(127, 137, 161, 0.3);
 }
@@ -140,10 +149,6 @@ h6 {
   height: 100%;
   width: 100%;
   object-fit: fill;
-}
-
-#header {
-  width: 100vw;
 }
 #header .header {
   display: flex;
@@ -166,6 +171,11 @@ h6 {
 #header .header .header__nav ul li a:hover,
 #header .header .header__nav ul li a:active {
   color: var(--color-secondary);
+}
+@media (max-width: 26.5625em) {
+  .header__logo {
+    display: none;
+  }
 }
 /*--------------------------------------------------------------
 # NAVIGATION MENU
@@ -303,7 +313,7 @@ h6 {
 }
 #mobile-navbar {
   display: none;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 @media (max-width: 62em) {
   #navbar {
@@ -357,17 +367,18 @@ h6 {
 /*--------------------------------------------------------------
 # HERO SECTION
 --------------------------------------------------------------*/
+#hero {
+  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  background-size: cover;
+  /* width: 100vw; */
+}
 #hero .hero {
   display: flex;
   align-items: center;
   gap: 2.4rem;
   padding: 8rem 4.8rem;
 
-  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
-  background-size: cover;
-
-  overflow: auto !important;
-  width: 100vw !important;
+  overflow: hidden;
   height: 100vh;
   position: relative;
 }
@@ -395,14 +406,14 @@ h6 {
   color: var(--color-secondary);
 }
 @media (max-width: 74.1875em) {
-  #hero .hero__content .hero__content--heading,
-  #hero .hero__content .hero__content--heading span {
+  #hero .hero .hero__content .hero__content--heading,
+  #hero .hero .hero__content .hero__content--heading span {
     font-size: 4.8rem;
   }
 }
 @media (max-width: 60.31em) {
-  #hero .hero__content .hero__content--heading,
-  #hero .hero__content .hero__content--heading span {
+  #hero .hero .hero__content .hero__content--heading,
+  #hero .hero .hero__content .hero__content--heading span {
     font-size: 3.6rem;
   }
 }
@@ -457,11 +468,11 @@ h6 {
     padding-bottom: 4.8rem;
   }
 }
-@media (max-width: 26.5625em) {
+/* @media (max-width: 26.5625em) {
   #hero {
     padding: 8rem 3.6rem;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # SECTIONS
@@ -555,7 +566,7 @@ section {
   flex-basis: 50%;
   padding: 0;
   margin: 0 auto;
-  width: 80%;
+  /* width: 80%; */
 }
 #about .about-text h2 {
   color: var(--color-primary);
@@ -611,11 +622,11 @@ section {
     padding-bottom: 4.8rem;
   }
 }
-@media (max-width: 26.5625em) {
+/* @media (max-width: 26.5625em) {
   #about {
     padding: 8rem 3.6rem;
   }
-}
+} */
 
 /* SERVICES SECTIONS
 --------------------------------*/
@@ -680,9 +691,14 @@ section {
   margin-bottom: 0;
   text-align: center;
 }
+@media (max-width: 48em) {
+  #services .section-header p {
+    max-width: 100%;
+  }
+}
 @media (max-width: 26.5625em) {
   #services {
-    padding: 8rem 3.6rem;
+    padding: 4rem 3.6rem;
   }
   #services .section-header h3 {
     font-size: 3rem;
@@ -728,7 +744,7 @@ CLIENTS SECTION
 }
 @media (max-width: 26.56em) {
   #clients {
-    padding: 6rem 3.6rem;
+    padding: 4rem 3.6rem;
   }
 }
 
@@ -887,15 +903,17 @@ CLIENTS SECTION
 }
 @media (max-width: 26.56em) {
   #stats {
-    padding: 8rem 3.6rem;
+    padding: 4rem 3.6rem;
   }
 }
 
 /* -----------------------------
  CTA SECTION
 --------------------------------*/
-#call-to-action {
+#cta {
   background: var(--color-primary);
+}
+#call-to-action {
   background-size: cover;
   padding: 6rem 4.8rem;
 
@@ -934,7 +952,7 @@ CLIENTS SECTION
 }
 @media (max-width: 26.56em) {
   #call-to-action {
-    padding: 6rem 3.6rem;
+    padding: 4rem 3.6rem;
   }
 }
 
@@ -1156,7 +1174,7 @@ CLIENTS SECTION
 } */
 @media (max-width: 26.56em) {
   #portfolio {
-    padding: 8rem 3.6rem;
+    padding: 4rem 3.6rem;
   }
 }
 
@@ -1361,7 +1379,7 @@ CLIENTS SECTION
 }
 @media (max-width: 26.54em) {
   #contact {
-    padding: 8rem 3.6rem;
+    padding: 4rem 3.6rem;
   }
 }
 /*-------------------------------------------------------------- # FOOTER --------------------------------------------------------------*/
@@ -1440,11 +1458,18 @@ CLIENTS SECTION
   }
 }
 @media (max-width: 35.95em) {
+  #footer {
+    padding: 2rem 3.6rem;
+  }
   .footer .footer__logo {
     flex-direction: column;
   }
   .footer .footer__addresses .addresses {
     flex-direction: column;
+    gap: 0;
+  }
+  .footer .footer__addresses .addresses .address h4 {
+    margin-bottom: 0.4rem;
   }
 }
 @media (max-width: 26.56em) {
@@ -1465,3 +1490,6 @@ COPYRIGHT SECTION
 .hybrid-icon img {
   width: 3.2rem;
 }
+
+/* NAVIGATION */
+/* HEADER */
