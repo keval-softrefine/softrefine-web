@@ -288,11 +288,25 @@
       mirror: false,
     });
   });
+
+  // const offCanvas = document.getElementsByClassName("offcanvas-body")[0];
+  // const offCanvasContainer =
+  //   document.getElementsByClassName("offcanvas-end")[0];
+  // const li = offCanvas.getElementsByTagName("li");
+  // for (let i = 0; i <= li.length - 1; i++) {
+  //   li[i].addEventListener("click", () => {
+  //     const offCanvasBackdrop = document.getElementsByClassName(
+  //       "offcanvas-backdrop fade show"
+  //     )[0];
+  //     offCanvasContainer.classList.remove("show");
+  //     offCanvasContainer.style.visibility = "hidden";
+  //     offCanvasBackdrop.classList.remove("show");
+  //   });
+  // }
 })();
 
-
 $('a[data-toggle="tooltip"]').tooltip({
-  animated: 'fade',
-  placement: 'top',
-  html: true
+  animated: "fade",
+  placement: "top",
+  html: true,
 });

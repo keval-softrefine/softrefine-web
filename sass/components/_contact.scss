@@ -1,5 +1,8 @@
-#contact .wrapper {
+#contact {
   padding: 8rem 4.8rem;
+}
+#contact .wrapper {
+  padding: 0 4.8rem;
   display: flex;
   align-items: flex-start;
   gap: 2.4rem;
@@ -86,13 +89,13 @@
   color: var(--color-secondary);
   margin-left: 0.5rem;
 }
+@media (max-width: 48em) {
+  #contact .wrapper {
+    padding: 0;
+  }
+}
 @media (max-width: 44.25em) {
   #contact .wrapper {
     flex-direction: column;
-  }
-}
-@media (max-width: 26.54em) {
-  #contact .wrapper {
-    padding: 4rem 3.6rem;
   }
 }

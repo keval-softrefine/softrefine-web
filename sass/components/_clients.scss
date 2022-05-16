@@ -8,6 +8,7 @@
   text-align: center;
   margin-bottom: 2.4rem;
 }
+
 #clients img {
   opacity: 1;
   transition: 0.3s;
@@ -39,7 +40,7 @@
   }
 }
 .big-logo {
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 375px) {
     width: 60px;
   }
 }
