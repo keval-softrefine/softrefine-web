@@ -1,4 +1,7 @@
 .git
+.parcel-cache
+node_modules
+package-lock.json
 
 # inner-page.html
 # portfolio-details.html
