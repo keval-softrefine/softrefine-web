@@ -657,8 +657,8 @@ section {
 }
 
 .footer .footer__logo .footer__logo--text {
-  color: #222;
-  font-size: 1.4rem;
+  color: #111;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -686,8 +686,8 @@ section {
 }
 
 .footer .footer__addresses .addresses .address p {
-  color: #222;
-  font-size: 1.4rem;
+  color: #111;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.8;
 }
