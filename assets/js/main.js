@@ -305,8 +305,8 @@
   // }
 })();
 
-$('a[data-toggle="tooltip"]').tooltip({
-  animated: "fade",
-  placement: "top",
-  html: true,
-});
+// $('a[data-toggle="tooltip"]').tooltip({
+//   animated: "fade",
+//   placement: "bottom",
+//   html: true,
+// });
