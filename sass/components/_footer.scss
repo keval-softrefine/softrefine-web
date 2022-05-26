@@ -1,11 +1,12 @@
 #footer {
   padding: 6rem 4.8rem;
 }
-.footer {
+#footer .footer {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6.4rem;
+  padding: 0 4.8rem;
 }
 .footer .footer__logo .footer__logo--img {
   margin-bottom: 1.4rem;
@@ -14,8 +15,8 @@
   width: max-content;
 }
 .footer .footer__logo .footer__logo--text {
-  color: #222;
-  font-size: 1.6rem;
+  color: #111;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -34,8 +35,8 @@
   color: var(--color-primary);
 }
 .footer .footer__addresses .addresses .address p {
-  color: #222;
-  font-size: 1.6rem;
+  color: #111;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -54,6 +55,11 @@
   .footer .footer__logo .footer__logo--img,
   .footer .footer__logo .footer__logo--text {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 48em) {
+  #footer .footer {
+    padding: 0;
   }
 }
 @media (max-width: 35.95em) {

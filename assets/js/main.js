@@ -289,29 +289,24 @@
     });
   });
 
-  const offCanvas = document.getElementsByClassName('offcanvas-body')[0];
-  const offCanvasContainer = document.getElementsByClassName('offcanvas-end')[0];
-  const li = offCanvas.getElementsByTagName('li');
-  for(let i = 0; i <= li.length - 1; i++) {
-    li[i].addEventListener('click', () => {
-      const offCanvasBackdrop = document.getElementsByClassName('offcanvas-backdrop fade show')[0];
-      const mobileNavbar = document.getElementById('mobile-navbar');
-      const header = document.getElementById('header');
-      mobileNavbar.style = '';
-      header.style = '';
-      offCanvasContainer.classList.remove('show');
-      offCanvasContainer.removeAttribute('aria-modal');
-      offCanvasContainer.removeAttribute('role');
-      offCanvasContainer.style.visibility='hidden';
-      offCanvasBackdrop.classList.remove('show');
-      // offCanvasBackdrop.style.display='none';
-    })
-  }
+  // const offCanvas = document.getElementsByClassName("offcanvas-body")[0];
+  // const offCanvasContainer =
+  //   document.getElementsByClassName("offcanvas-end")[0];
+  // const li = offCanvas.getElementsByTagName("li");
+  // for (let i = 0; i <= li.length - 1; i++) {
+  //   li[i].addEventListener("click", () => {
+  //     const offCanvasBackdrop = document.getElementsByClassName(
+  //       "offcanvas-backdrop fade show"
+  //     )[0];
+  //     offCanvasContainer.classList.remove("show");
+  //     offCanvasContainer.style.visibility = "hidden";
+  //     offCanvasBackdrop.classList.remove("show");
+  //   });
+  // }
 })();
 
-
 $('a[data-toggle="tooltip"]').tooltip({
-  animated: 'fade',
-  placement: 'top',
-  html: true
+  animated: "fade",
+  placement: "top",
+  html: true,
 });
